@@ -15,6 +15,11 @@
   excerpt: "Documentation wiki, here you can found all the required info."
   image: 400x250.gif
 
+- title: Download
+  url: https://github.com/souliss/souliss/wiki/Downloads
+  excerpt: "Get the latest code and user interfaces."
+  image: 400x250.gif
+  
 - title: About
   url: /about/
   excerpt: "All about Skinny Bones for Jekyll."
