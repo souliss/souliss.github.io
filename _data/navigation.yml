@@ -2,17 +2,17 @@
 
 - title: Getting Started
   url: /getting-started/
-  excerpt: "Everything you need to know to get started with Skinny Bones and Jekyll."
+  excerpt: "Everything you need to know to get started with Souliss."
   image: 400x250.gif
 
-- title: Sample Articles
+- title: Blog Post
   url: /articles/
-  excerpt: "Examples of long form posts."
+  excerpt: "Latest news in the Souliss open-source project."
   image: 400x250.gif
 
-- title: Media
-  url: /media/
-  excerpt: "Examples of media posts perfect for showcasing work, photographs, etc."
+- title: Wiki
+  url: https://github.com/souliss/souliss/wiki
+  excerpt: "Documentation wiki, here you can found all the required info."
   image: 400x250.gif
 
 - title: About
