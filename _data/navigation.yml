@@ -1,5 +1,10 @@
 # Site navigation links
 
+- title: Welcome
+  url: /welcome/
+  excerpt: "All about Souliss, the framework for Smart Home."
+  image: 400x250.gif
+  
 - title: Getting Started
   url: /getting-started/
   excerpt: "Everything you need to know to get started with Souliss."
@@ -16,11 +21,7 @@
   image: 400x250.gif
 
 - title: Download
-  url: https://github.com/souliss/souliss/wiki/Downloads
+  url: /download/
   excerpt: "Get the latest code and user interfaces."
   image: 400x250.gif
   
-- title: About
-  url: /about/
-  excerpt: "All about Skinny Bones for Jekyll."
-  image: 400x250.gif

@@ -4,6 +4,7 @@ permalink: /
 image:
   feature: frontpage.jpg
 ---
+
 <div class="tiles">
 
 <div class="tile">
@@ -26,25 +27,5 @@ image:
   <p class="post-excerpt">Compatible with popular libraries like <a href="http://bourbon.io">Bourbon</a>, <a href="http://neat.bourbon.io/">Neat</a>, and <a href="http://github.com/octopress/octopress">Octopress</a> to help build and deploy your site with ease.</p>
 </div><!-- /.tile -->
 
-</div><!-- /.tiles -->
+</div><!-- /.tiles --> 
 
-<div class="tiles">
-
-<div class="tile">
-  <h2 class="post-title">Built for Jekyll 2</h2>
-  <p class="post-excerpt">Takes advantage of native Sass support and data files to make customizing your site easier.</p>
-</div><!-- /.tile -->
-
-<div class="tile">
-  <h2 class="post-title">Content First</h2>
-  {% highlight html %}
-  <figure class="third">
-	<img src="{{ site.url }}/images/image-filename-1.jpg">
-	<img src="{{ site.url }}/images/image-filename-2.jpg">
-	<img src="{{ site.url }}/images/image-filename-3.jpg">
-	<figcaption>Caption describing these three images.</figcaption>
-  </figure>
-  {% endhighlight %}
-</div><!-- /.tile -->
-
-</div><!-- /.tiles -->
