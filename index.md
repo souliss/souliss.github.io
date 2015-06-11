@@ -27,3 +27,24 @@ image:
 </div><!-- /.tile -->
 
 </div><!-- /.tiles -->
+
+<div class="tiles">
+
+<div class="tile">
+  <h2 class="post-title">Built for Jekyll 2</h2>
+  <p class="post-excerpt">Takes advantage of native Sass support and data files to make customizing your site easier.</p>
+</div><!-- /.tile -->
+
+<div class="tile">
+  <h2 class="post-title">Content First</h2>
+  {% highlight html %}
+  <figure class="third">
+	<img src="{{ site.url }}/images/image-filename-1.jpg">
+	<img src="{{ site.url }}/images/image-filename-2.jpg">
+	<img src="{{ site.url }}/images/image-filename-3.jpg">
+	<figcaption>Caption describing these three images.</figcaption>
+  </figure>
+  {% endhighlight %}
+</div><!-- /.tile -->
+
+</div><!-- /.tiles -->
