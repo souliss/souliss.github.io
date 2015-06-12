@@ -3,11 +3,11 @@
 - title: Home
   url: /
 
+- title: Welcome
+  url: /welcome/
+  
 - title: Getting Started
   url: /getting-started/
-
-- title: About
-  url: /about/
 
 - title: Terms
   url: /terms/

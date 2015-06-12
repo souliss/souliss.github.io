@@ -24,11 +24,11 @@ gems:
 # Site owner
 owner:
   name: Souliss Team
-  web: http://souliss.github.io
+  web: http://www.souliss.net
   email: info@souliss.net
   twitter: soulissteam
   bio: ""
-  avatar: bio-photo.jpg # 160x160 px image for author byline
+  avatar: logo160.png # 160x160 px image for author byline
   google:
     plus: +SoulissApp
     ad-client: 
