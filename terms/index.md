@@ -14,6 +14,8 @@ toc: true
 
 {% include toc.html %}
 
+You are free to use Souliss according to the following license, those fit most of the cases and are applicable also for commercial products, you can ask for a re-licensing to fit your needs.
+
 ## Logs
 
 Like many other websites, this site uses log files to help learn about when, from where, and how often traffic flows to this site. The information in these log files include:
@@ -33,13 +35,14 @@ All of this information is not linked to anything that is personally identifiabl
     Creative Commons Attribution 4.0 International (CC BY 4.0), you are free to:
 
     Share — copy and redistribute the material in any medium or format
-    Adapt — remix, transform, and build upon the material for any purpose, even commercially.
-
+    Adapt — remix, transform, and build upon the material for any purpose,
+    even commercially.
     The licensor cannot revoke these freedoms as long as you follow the license terms.
 
     Under the following terms:
-
-    Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use. 
+    Attribution — You must give appropriate credit, provide a link to the license,
+    and indicate if changes were made. You may do so in any reasonable manner, but
+    not in any way that suggests the licensor endorses you or your use. 
     
     This is a human-readable summary of (and not a substitute for) the license.
     <https://creativecommons.org/licenses/by/4.0/legalcode>
