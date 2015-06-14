@@ -35,5 +35,21 @@ owner:
     ad-slot: 
   disqus-shortname:
 
-
+# Includes an icon in the footer for each username you enter
+footer-links:
+  dribbble:
+  email: info@souliss.net
+  facebook:
+  flickr:
+  github: souliss
+  instagram:
+  linkedin:
+  pinterest:
+  rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
+  twitter: soulissteam
+  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  youtube: channel/UCZ89QEFpv4exfNsRaajIPfw
+  googleplus: 113934123042484468682/posts
+  
+# Exclude these files from your production _site
 exclude: ["lib", "config.rb", ".sass-cache", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "*.sublime-project", "*.sublime-workspace", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "node_modules", "Gruntfile.js", "package.json"]
