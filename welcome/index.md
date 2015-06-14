@@ -28,6 +28,8 @@ Souliss is build in three main parts, listed below:
 
 Is at your option to decide to use the Android Application or the openHAB Binding, you can even use both at same time.
 
+{% include toc.html %}
+
 ## Get Started
 
 The first step in is a tour in the [wiki](https://github.com/souliss/souliss/wiki), this gives you a detail understanding of the features and capabilities. The most important pages to read are:
