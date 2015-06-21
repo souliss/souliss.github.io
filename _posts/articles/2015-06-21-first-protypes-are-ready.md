@@ -19,7 +19,7 @@ Just got an email from [KMP Electronics](http://kmpelectronics.eu/) in the Inbox
 
 Is designed to be as much as possible a plug&play solution for sensing data around your home and getting it into Souliss. The UEXT socket allow extension with relay I/O and others while working on wall charger.
 
-**Stand a year:** `.notice-info` By design all sensor can be switched off as long as the nRF24L01 radio to stay longer between charges. Using LiPo you can size the needed amount energy to keep the node running a year or more.
+**Stand a year:** By design all sensor can be switched off as long as the nRF24L01 radio to stay longer between charges. Using LiPo you can size the needed amount energy to keep the node running a year or more.
 {: .notice-info}
 
-![](https://github.com/plinioseniore/skinnybones/blob/gh-pages/images/2015-06/battery_board-2.jpg?raw=true)
+![](https://github.com/souliss/souliss.github.io/blob/master/images/2015-06/battery_board-2.jpg?raw=true)

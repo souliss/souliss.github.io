@@ -54,7 +54,7 @@ As open-source project, Souliss based on a community of people that share their 
 The following languages are available:
 <a href="https://groups.google.com/forum/#!forum/souliss" class="btn-info">English</a> <a href="https://groups.google.com/forum/#!forum/souliss-it" class="btn-info">Italiano</a> <a href="https://groups.google.com/forum/#!forum/souliss-es" class="btn-info">Espanol</a>
 
-**Be Aware:** The [**Community**](https://github.com/souliss/souliss/wiki/Community) is a mailing list of `volunteers` that help each others in improve their object and home empowered with Souliss. If you are using Souliss on a product, consider to get a `premium` support, contact us for details. 
+**Be Aware:** The [**Community**](https://github.com/souliss/souliss/wiki/Community) is a mailing list of `volunteers` that help each others in improve their object and home empowered with Souliss. If you are using Souliss on a product, consider to get a `premium` support, [**contact us**](mailto:info@souliss.net) for details. 
 {: .notice-warning}
 
 ## Contribute and Promote
