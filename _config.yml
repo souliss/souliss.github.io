@@ -1,7 +1,7 @@
 # Site wide configuration
 
-title: Souliss
-description: "Souliss SmartHome Framework"
+title: souliss
+description: Arduino and Android SmartHome
 logo: 120x120.gif
 teaser: 400x250.gif
 locale: en_US
