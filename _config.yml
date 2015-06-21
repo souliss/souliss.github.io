@@ -27,7 +27,7 @@ owner:
   web: http://www.souliss.net
   email: info@souliss.net
   twitter: soulissteam
-  bio: ""
+  bio: "Open source, smart home and IoT framework for Arduino and Android"
   avatar: logo160.png # 160x160 px image for author byline
   google:
     plus: +SoulissApp
@@ -50,6 +50,9 @@ footer-links:
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: channel/UCZ89QEFpv4exfNsRaajIPfw
   googleplus: 113934123042484468682/posts
+
+gems:
+  - jekyll-redirect-from
   
 # Exclude these files from your production _site
 exclude: ["lib", "config.rb", ".sass-cache", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "*.sublime-project", "*.sublime-workspace", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "node_modules", "Gruntfile.js", "package.json"]
