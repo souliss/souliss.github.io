@@ -26,7 +26,7 @@ tags: [arduino, android, home automation, smarthome, openhab, internet of things
   <h2 class="post-title" align="center">Prototype in minutes and go in Production in few hours</h2>
   <p class="post-excerpt" align="center"><img src="{{ site.url }}/images/Buildingblocks.jpg" alt="{{ site.title }}" style="width:214px;height:128px;border:0;"></p>  
   <p class="post-excerpt">Build a prototype Souliss network require few tens of minutes and you are ready to production.</p>
-  <p class="post-excerpt">Thousands of homes and objects are empowered with Souliss.</p>
+  <p class="post-excerpt">Thousands of homes and objects are empowered with Souliss, using Arduino, ESP8266, nRF24L01 and others.</p>
 </div><!-- /.tile -->
 
 <div class="tile">
