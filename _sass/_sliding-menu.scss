@@ -145,18 +145,18 @@
     }
     .title {
       display: block;
-      margin-left: 60px;
+      margin-left: 0px;
       font-family: $alt-font;
       @include font-size(24,no);
       font-weight: 700;
       @include media($small) {
-        margin-left: 170px;
+        margin-left: 70px;
         @include font-size(32,no);
       }
     }
     .excerpt {
       margin-top: 0;
-      margin-left: 60px;
+      margin-left: 0px;
       @include font-size(14,no);
       @include media($small) {
         margin-left: 170px;
@@ -170,7 +170,7 @@
     font-style: italic;
   }
   .menu-item .home a {
-    @include font-size(32);
+    @include font-size(20);
   }
 }
 
