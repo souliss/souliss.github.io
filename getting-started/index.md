@@ -12,10 +12,6 @@ image:
 share: false
 ---
 
-Lets see what Souliss does and how can fit for you.
-
-## Introduction
-
 Souliss is build in three main parts, listed below:
 
 * [The Arduino Networking Framework](https://github.com/souliss/souliss) : This is the code that runs on your Arduino and compatible boards, it network your boards and is the base structure of your automation system.
