@@ -1,0 +1,19 @@
+# Footer navigation links
+
+- title: Home
+  url: /
+
+- title: Welcome
+  url: /welcome/
+  
+- title: Let's Start
+  url: /getting-started/
+  
+- title: Blog Post
+  url: /articles/
+
+- title: Wiki
+  url: https://github.com/souliss/souliss/wiki
+
+- title: Terms
+  url: /terms/

@@ -1,0 +1,58 @@
+# Site wide configuration
+
+title: souliss
+description: Arduino and Android SmartHome
+logo: 120x120.gif
+teaser: 400x250.gif
+locale: en_US
+url: //plinioseniore.github.io/skinnybones
+avatar: https://avatars0.githubusercontent.com/u/11448259?v=3&s=200
+
+# Jekyll configuration
+
+sass:
+  sass_dir: _sass
+  style: compressed
+permalink: /:categories/:title/
+kramdown:
+  toc_levels: 1..2
+highlighter: pygments
+gems:
+  - jekyll-sitemap
+
+
+# Site owner
+owner:
+  name: Souliss Team
+  web: http://www.souliss.net
+  email: info@souliss.net
+  twitter: soulissteam
+  bio: "Open source, smart home and IoT framework for Arduino and Android"
+  avatar: logo160.png # 160x160 px image for author byline
+  google:
+    plus: +SoulissApp
+    ad-client: 
+    ad-slot: 
+  disqus-shortname:
+
+# Includes an icon in the footer for each username you enter
+footer-links:
+  dribbble:
+  email: info@souliss.net
+  facebook:
+  flickr:
+  github: souliss
+  instagram:
+  linkedin:
+  pinterest:
+  rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
+  twitter: soulissteam
+  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  youtube: channel/UCZ89QEFpv4exfNsRaajIPfw
+  googleplus: 113934123042484468682/posts
+
+gems:
+  - jekyll-redirect-from
+  
+# Exclude these files from your production _site
+exclude: ["lib", "config.rb", ".sass-cache", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "*.sublime-project", "*.sublime-workspace", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "node_modules", "Gruntfile.js", "package.json"]
