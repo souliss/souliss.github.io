@@ -5,7 +5,7 @@ categories: articles
 author: plinio_seniore
 excerpt: "Thinking out loud."
 tags: [arduino, fks, bfks, oscilloscope]
-modified: 2012-04-03
+modified: 2012-08-12
 ads: false  
 redirect_from: "2012/08/souliss-whats-next.html"
 ---

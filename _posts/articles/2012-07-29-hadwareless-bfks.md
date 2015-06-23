@@ -5,7 +5,7 @@ categories: articles
 author: plinio_seniore
 excerpt: "Experiments with FKS."
 tags: [arduino, fks, bfks, oscilloscope]
-modified: 2012-04-03
+modified: 2012-07-29
 ads: false  
 redirect_from: "2012/07/hardware-less-bfks.html"
 ---
