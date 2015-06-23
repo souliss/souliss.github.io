@@ -6,6 +6,8 @@ author: plinio_seniore
 excerpt: "Control an IR Lamp."
 tags: [arduino, infrared, IR, lamp, led bulb]
 modified: 2012-09-26
+image:
+  teaser: 2012-09/IR_controlled_lamp.jpg
 ads: false  
 redirect_from: "2012/09/ir-lights-controller.html"
 ---
