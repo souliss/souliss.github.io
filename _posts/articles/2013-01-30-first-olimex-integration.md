@@ -7,7 +7,7 @@ excerpt: "Support for Olimex board is almost complete."
 tags: [arduino, android, olimex, souliss, enc28j60]
 modified: 2013-01-30
 image:
-  teaser: 2013/01/olimexnode.jpg
+  teaser: 2013-01/olimexnode.jpg
 ads: false  
 redirect_from: "2013/01/first-step-of-olimex-integration-near.html"
 ---

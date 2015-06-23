@@ -7,7 +7,7 @@ excerpt: "Support for Olimex WiFi transceiver is near to be completed."
 tags: [arduino, android, olimex, souliss, MRF24WB0MA ]
 modified: 2013-01-12
 image:
-  teaser: 2013/01/Souliss with MODWIFI.jpg
+  teaser: 2013-01/Souliss with MODWIFI.jpg
 ads: false  
 redirect_from: "2013/01/souliss-goes-wifi.html"
 ---

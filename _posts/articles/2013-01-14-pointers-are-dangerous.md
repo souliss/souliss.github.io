@@ -7,7 +7,7 @@ excerpt: "Diving in the world of C memory pointers."
 tags: [arduino, android, olimex, souliss, enc28j60]
 modified: 2013-01-14
 image:
-  teaser: 2013/01/Testing Olimex's board with Souliss.png
+  teaser: 2013-01/Testing Olimex's board with Souliss.png
 ads: false  
 redirect_from: "2013/01/pointers-are-so-dangerous.html"
 ---
