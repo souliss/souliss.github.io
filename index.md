@@ -32,7 +32,7 @@ tags: [arduino, android, home automation, smarthome, openhab, internet of things
 <div class="tile">
   <h2 class="post-title" align="center">Open Source</h2>
   <p class="post-excerpt" align="center"><img src="{{ site.url }}/images/osi_logo.png" alt="{{ site.title }}" style="width:214px;height:133px;border:0;"></p>
-  <p class="post-excerpt">Souliss is a community driven project, all designs (firmware, application and boards) are released in open source.</p>
+  <p class="post-excerpt">Souliss is an open-source alternative to ZigBee and Z-Wave. All designs (firmware, application and boards) are released in open source.</p>
   <p class="post-excerpt">A wide community ensure a strength and stable product.</p>
 </div><!-- /.tile -->
 
