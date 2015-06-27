@@ -7,8 +7,8 @@ excerpt: "Air305 just arrived."
 tags: [arduino, android, relay, 433 MHz, radio, remote control]
 modified: 2013-03-16
 image:
-  feature: 2013-03/UnpackingA305.JPG
-  teaser: 2013-03/UnpackingA305-teaser.JPG
+  feature: 2013-03/UnpackingA305.jpg
+  teaser: 2013-03/UnpackingA305-teaser.jpg
 ads: false  
 redirect_from: "2013/03/unpack-airq-305-relay-board.html"
 ---
