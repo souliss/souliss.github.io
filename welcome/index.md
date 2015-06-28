@@ -22,9 +22,9 @@ You can use Souliss to build smart objects or an entiere home automation system 
 
 The Internet of Things (IoT) starts from your **Intranet of Things**, that's what Souliss does. It build a local network of connected devices, able to share data in *peer-to-peer* using an **event based** protocol, this lets you focus on your goal rather than on the development.
 
-Your **Souliss** network is an *Intranet* of **Arduino** and compatibles devices that communicates over Ethernet, WiFi, wireless point-to-point and RS485 in a seamless fashion, one device will then bridge all your network to the *Internet*. The network layer is behind Souliss and is invisible for the users, each node has an its own identifier, you don't need to know nothing more.
-
 <p class="post-excerpt" align="center"><img src="{{ site.url }}/images/intranetofthings800.png" alt="{{ site.title }}"></p> 
+
+Your **Souliss** network is an *Intranet* of **Arduino** and compatibles devices that communicates over Ethernet, WiFi, wireless point-to-point and RS485 in a seamless fashion, one device will then bridge all your network to the *Internet*. The network layer is behind Souliss and is invisible for the users, each node has an its own identifier, you don't need to know nothing more.
 
 ## A Distributed Approach that goes in the Cloud
 
