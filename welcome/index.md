@@ -24,6 +24,8 @@ The Internet of Things (IoT) starts from your **Intranet of Things**, that's wha
 
 Your **Souliss** network is an *Intranet* of **Arduino** and compatibles devices that communicates over Ethernet, WiFi, wireless point-to-point and RS485 in a seamless fashion, one device will then bridge all your network to the *Internet*. The network layer is behind Souliss and is invisible for the users, each node has an its own identifier, you don't need to know nothing more.
 
+<p class="post-excerpt" align="center"><img src="{{ site.url }}/images/_intranetofthings800.png" alt="{{ site.title }}"></p> 
+
 ## A Distributed Approach that goes in the Cloud
 
 The underlaying layer works in *peer-to-peer* so that your internal network is not affected by internet, compared to **cloud-only** devices you don't care if your internet is down, your basically functionality will always be available and neither you have a single point of fault. 
