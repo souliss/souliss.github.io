@@ -30,9 +30,10 @@ Your **Souliss** network is an *Intranet* of **Arduino** and compatibles devices
 
 The underlaying layer works in *peer-to-peer* so that your internal network is not affected by internet, compared to **cloud-only** devices you don't care if your internet is down, your basically functionality will always be available and neither you have a single point of fault. 
 
-You use the **Internet** connectivity only when is strictly required, as example to control your *Things* while you are abroad or when you need to interact with a cloud service (like schedule your objects via Google Calendar).
+You use the **Internet** connectivity only when is strictly required, as example to control your *Things* while you are abroad or when you need to interact with external cloud service (like schedule your objects via Google Calendar).
 
 ## Interact from your Smartphone and build Scenarios
 
 Control your devices from your *smartphone* is striaghtforward, using **SoulissApp** for Android you can directly access your Things without relay on a central server, but if you need it a server can be used to build scenario and get a webhook to cloud services. This is done through **openHAB** an open-source automation server that offer cloud and webservices for your smart objects and home.
 
+<p class="post-excerpt" align="center"><img src="{{ site.url }}/images/userinterface800.png" alt="{{ site.title }}"></p> 
