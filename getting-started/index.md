@@ -14,11 +14,11 @@ share: false
 
 Souliss is build in three main parts, listed below:
 
-* [The Arduino Networking Framework](https://github.com/souliss/souliss) : This is the code that runs on your Arduino and compatible boards, it network your boards and is the base structure of your automation system.
+* [The Arduino Networking Framework](https://github.com/souliss/souliss) : This is the code that runs on your Arduino and compatible boards (things), it network your boards and is the base structure of your smart home system.
 
-* [The Android Application](https://github.com/souliss/soulissapp) : This is an application that can communicate directly with your automation system, it learns from the nodes their features (light, door, windows or whatever they control).
+* [The Android Application](https://github.com/souliss/soulissapp) : This is an application that can communicate directly with your things, it learns from the nodes their features (light, door, windows or whatever they control).
 
-* [The openHAB Binding](https://github.com/souliss/bindingopenhab) : This bind your Souliss nodes with the openHAB automation supervision system, this provide you a server to control your automationa and make advanced schedules. More with openHAB it lets you control multiple vendor system through an unique interface, so that you can use Souliss based devices togheter with other commercial ones.
+* [The openHAB Binding](https://github.com/souliss/bindingopenhab) : This bind your Souliss nodes with the openHAB automation supervision system, this provide you a server to control your automation and make advanced schedules. More with openHAB it lets you control multiple vendor system through an unique interface, so that you can use Souliss based devices togheter with other commercial ones.
 
 Is at your option to decide to use the Android Application or the openHAB Binding, you can even use both at same time.
 
@@ -26,13 +26,9 @@ Is at your option to decide to use the Android Application or the openHAB Bindin
 
 ## Get Started
 
-The first step in is a tour in the [wiki](https://github.com/souliss/souliss/wiki), this gives you a detail understanding of the features and capabilities. The most important pages to read are:
+The first step in is a tour in the [wiki](https://github.com/souliss/souliss/wiki), this gives you a detail understanding of the features and capabilities. 
 
-* [Supported Hardware Platforms](https://github.com/souliss/souliss/wiki/Supported%20Hardware%20Platform) : Identify how you nodes will be build and the communication medias (Ethernet, Wireless point-to-point, RS485).
-* [Suppoerted Network Architectures](https://github.com/souliss/souliss/wiki/Supported%20Network%20Architecture) : Understand how you can combine multiple communication interface
-* [Getting Started](https://github.com/souliss/souliss/wiki/Getting%20Started%20with%20Souliss) : Now you are ready to goo deeper, start from the first upload guide.
-
-Some others useful wiki pages: <a href="https://github.com/souliss/souliss/wiki/Your%20First%20Upload" class="btn-info">Step by step upload</a> <a href="https://github.com/souliss/souliss/wiki/Framework%20Configuration" class="btn-info">Configure a sketch</a> <a href="https://github.com/souliss/souliss/wiki/SoulissApp" class="btn-info">Use SoulissApp</a> 
+<a href="https://github.com/souliss/souliss/wiki/Supported%20Hardware%20Platform" class="btn-info">Supported Hardware</a> <a href="https://github.com/souliss/souliss/wiki/Supported%20Network%20Architecture" class="btn-info">Network Architectures</a> <a href="https://github.com/souliss/souliss/wiki/Getting%20Started%20with%20Souliss" class="btn-info">Getting Started</a> <a href="https://github.com/souliss/souliss/wiki/Your%20First%20Upload" class="btn-info">Step by step upload</a> <a href="https://github.com/souliss/souliss/wiki/SoulissApp" class="btn-info">Use SoulissApp</a> 
  
 ### Required skills
 
