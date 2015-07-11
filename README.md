@@ -59,7 +59,7 @@ Copy any existing post to get the right sintax, the first information defines:
 * Small image (teaser) in the post list
 * Description
 
-Blog post are allowed only in English language.
+Blog post are allowed only in English language, the Syntax is [Markdown](https://guides.github.com/features/mastering-markdown/) as per standard wiki pages.
 
 If you are adding images directly in the repository, use a subfolder with as yyyy-mm.
 
