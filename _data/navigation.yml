@@ -15,5 +15,8 @@
   excerpt: "Latest news in the Souliss open-source project."
   image: 400x250.gif
 
-
+- title: Tutorial
+  url: /tutorial/
+  excerpt: "Step by step guide."
+  image: 400x250.gif
   
