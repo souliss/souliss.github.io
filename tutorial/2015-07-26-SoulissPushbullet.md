@@ -83,7 +83,7 @@ Steps :
 
 - Create another ThingHTTP for the Light OFF, follow the picture below..
 
-![ts1](https://cloud.githubusercontent.com/assets/12625575/8893767/f16cc176-33c7-11e5-84c5-541380c2a40a.PNG)
+![ts3](https://cloud.githubusercontent.com/assets/12625575/8894038/7bd7f5e2-33d2-11e5-8a86-7691a5e38469.PNG)
 
 You can change the text body to fit your need, but it must be in json format.. I suggest just change this line
 
