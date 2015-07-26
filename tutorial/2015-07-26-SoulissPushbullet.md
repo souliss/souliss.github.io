@@ -88,13 +88,13 @@ Steps :
 You can change the text body to fit your need, but it must be in json format.. I suggest just change this line
 
 ` 
-{"type": "note", "title": **"IoT Message"**, "body": **"Lampu Teras ON"**}
+{"type": "note", "title": "IoT Message", "body": "Lampu Teras ON"}
 `
 
-into
+into something like this :
 
 ` 
-{"type": "note", "title": **"Message from Home"**, "body": **"LIGHT ON"**}
+{"type": "note", "title": "Message from Home", "body": "LIGHT ON"}
 ` 
 
 - Back to ThingSpeak APPS, now click React app, create new React, this will executed ThingHTTP is some condition meet.. we create a new React for Light ON
