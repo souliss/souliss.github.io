@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: Tutorial
 title: "Souliss and Pushbullet"
 categories: media
 excerpt: "This will make a Pushbullet Notification with SoulissApp"
