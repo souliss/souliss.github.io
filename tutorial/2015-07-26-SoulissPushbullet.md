@@ -94,3 +94,5 @@ Steps :
 ![ts5](https://cloud.githubusercontent.com/assets/12625575/8893852/c9309792-33cb-11e5-8dae-3713ddfaa0d4.PNG)
 
 You are done, now everytime you pressing ON OFF button in SoulissApp you should get notification in Pushbullet..
+
+![lastts](https://cloud.githubusercontent.com/assets/12625575/8894006/5a3d35ec-33d1-11e5-8a17-ba911328b059.PNG)
