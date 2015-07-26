@@ -22,7 +22,7 @@ In teory it will work on Souliss board, as long as Souliss Node connected to int
 
 First we got to declare ThingSpeak API and ThingSpeak server, add this in top of your sketch
 
-```
+```c
 // ThingSpeak API
 const char* apiKey = "Your ThingSpeak API key";
 const char* serverTS = "api.thingspeak.com";
@@ -30,7 +30,7 @@ const char* serverTS = "api.thingspeak.com";
 
 In your Souliss Node sketch you should have a code to read the pin state..
 
-```
+```c
  int inputState = digitalRead(RELAY);
           if (inputState != oldInputState){
               sendInputState(inputState);
@@ -40,19 +40,19 @@ In your Souliss Node sketch you should have a code to read the pin state..
 
 Put above code in void loop(), don't forget to define oldInputState as bool in void setup()
 
-`
+```c
   bool oldInputState;
-` 
+``` 
 
 Then in void setup you also should have oldInputState value, it easy, add this below code in void setup()  
 
-`  
+```c  
   oldInputState = !digitalRead(RELAY);
-`  
+```  
 
 Now the last thing we should do in the arduino sketch is create a function of sendInputState, put this after void loop()
 
-```
+```c
   // send data to ThingSpeak.com
   void sendInputState(bool inputState){
     Serial.println(inputState); 
