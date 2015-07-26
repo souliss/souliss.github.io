@@ -46,13 +46,13 @@ Put above code in void loop(), don't forget to define oldInputState as bool in t
   bool oldInputState;
 ``` 
 
-Then in void setup you also should have oldInputState value, it easy, add this below code in void setup()  
+Then in void setup you also should have oldInputState value, it easy, add this code below in void setup()  
 
 ```c  
   oldInputState = !digitalRead(RELAY);
 ```  
 
-Now the last thing we should do in the arduino sketch is create a function of sendInputState, put this after void loop()
+Now the last thing we should do in the Arduino sketch is create a function of sendInputState, put this after void loop(){}
 
 ```c
   // send data to ThingSpeak.com
