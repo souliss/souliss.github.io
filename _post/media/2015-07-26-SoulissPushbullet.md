@@ -18,7 +18,7 @@ Hello..Soulisser
 
 This tutorial will make your Souliss ON/OFF Output Timer/T11 typicals Node capable to send notification to Pushbullet.
 
-In teory it will work on Souliss board, as long as Souliss Node connected to internet, tested on ESP8266 only..
+In teory it will work on all Souliss board, as long as Souliss Node connected to internet, but this tested on ESP8266 only..
 
 First we got to declare ThingSpeak API and ThingSpeak server, add this in top of your sketch
 
