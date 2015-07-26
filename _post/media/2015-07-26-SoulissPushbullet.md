@@ -38,7 +38,7 @@ In your Souliss Node sketch you should have a code to read the pin state..
           } 
 ```
 
-Put above code in void loop(), don't forget to define oldInputState as bool in void setup()
+Put above code in void loop(), don't forget to define oldInputState as bool in top of the sketch
 
 ```c
   bool oldInputState;
