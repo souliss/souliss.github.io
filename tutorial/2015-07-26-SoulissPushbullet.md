@@ -71,25 +71,37 @@ Now we need to setup ThingSpeak Channel, ThingHTTP and React.. but first you wil
 
 Steps :
 
-1. Create New Channel in ThingSpeak, name it as you wish, in my case "PushbulletTriggerTeras"
+- Create New Channel in ThingSpeak, name it as you wish, in my case "PushbulletTriggerTeras"
 
-2. Make sure you have one field, use field 1 and name it as "Light State"
+- Make sure you have one field, use field 1 and name it as "Light State"
 
 ![ts11](https://cloud.githubusercontent.com/assets/12625575/8893820/87afe1ac-33ca-11e5-8455-b6cdfa0fc7f2.PNG)
 
-3. Click APPS in ThingSpeak, and click ThingHTTP app, create new ThingHTTP, this will send http request to pushbullet if the Light ON, fill the field as the picture
+- Click APPS in ThingSpeak, and click ThingHTTP app, create new ThingHTTP, this will send http request to pushbullet if the Light ON, fill the field as the picture
 
 ![ts2](https://cloud.githubusercontent.com/assets/12625575/8893826/d39051e2-33ca-11e5-9600-716a0502995a.PNG)
 
-4. Create another ThingHTTP for the Light OFF, follow the picture below..
+- Create another ThingHTTP for the Light OFF, follow the picture below..
 
 ![ts1](https://cloud.githubusercontent.com/assets/12625575/8893767/f16cc176-33c7-11e5-84c5-541380c2a40a.PNG)
 
-5. Back to ThingSpeak APPS, now click React app, create new React, this will executed ThingHTTP is some condition meet.. we create a new React for Light ON
+You can change the text body to fit your need, but it must be in json format.. I suggest just change this line
+
+` 
+{"type": "note", "title": **"IoT Message"**, "body": **"Lampu Teras ON"**}
+`
+
+into
+
+` 
+{"type": "note", "title": **"Message from Home"**, "body": **"LIGHT ON"**}
+` 
+
+- Back to ThingSpeak APPS, now click React app, create new React, this will executed ThingHTTP is some condition meet.. we create a new React for Light ON
 
 ![ts4](https://cloud.githubusercontent.com/assets/12625575/8893846/a40e9eaa-33cb-11e5-9e30-f60f7544a95d.PNG)
 
-6. Last step, create another React for Light OFF
+- Last step, create another React for Light OFF
 
 ![ts5](https://cloud.githubusercontent.com/assets/12625575/8893852/c9309792-33cb-11e5-8dae-3713ddfaa0d4.PNG)
 
