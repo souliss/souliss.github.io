@@ -21,16 +21,19 @@ In your Souliss Node sketch you should have a code to read the pin state..
 `````
 
 Put above code in void loop(), don't forget to define oldInputState as bool in void setup()
+
 `  
   bool oldInputState;
 ` 
 
 Then in void setup you also should have oldInputState value, it easy, add this below code in void setup()  
+
 `  
   oldInputState = !digitalRead(RELAY);
 `  
 
 Now the last thing we should do in the arduino sketch is create a function of sendInputState, put this after void loop()
+
 ``````````````````````````````
   // send data to ThingSpeak.com
   void sendInputState(bool inputState){
@@ -63,10 +66,13 @@ Now the last thing we should do in the arduino sketch is create a function of se
   
 }
 ``````````````````````````````
+
 Now we need to setup ThingSpeak Channel, ThingHTTP and React.. but first you will need Pushbullet token, so create pushbullet account, then create ThingSpeak account..
 
 Steps :
+
 1. Create New Channel in ThingSpeak, name it as you wish, in my case "PushbulletTriggerTeras"
+
 2. Make sure you have one field, use field 1 and name it as "Light State"
 
 ![ts11](https://cloud.githubusercontent.com/assets/12625575/8893820/87afe1ac-33ca-11e5-8455-b6cdfa0fc7f2.PNG)
