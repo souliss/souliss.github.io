@@ -89,11 +89,11 @@ Now we need to setup ThingSpeak Channel, ThingHTTP and React.. but first you wil
 
 Steps :
 
-- Create New Channel in ThingSpeak, name it as you wish, in my case "PushbulletTriggerTeras"
+- Create New Channel in ThingSpeak, name it as you wish, in my case "PushbulletTriggerKamar"
 
-- Make sure you have one field, use field 1 and name it as "Light State"
+- Make sure you have one field, use field 1 and name it as "Relay State"
 
-![ts11](https://cloud.githubusercontent.com/assets/12625575/8893820/87afe1ac-33ca-11e5-8455-b6cdfa0fc7f2.PNG)
+![tskamar](https://cloud.githubusercontent.com/assets/12625575/8894408/3aa2d5ac-33e0-11e5-817b-2a2f449b289c.PNG)
 
 - Click APPS in ThingSpeak, and click ThingHTTP app, create new ThingHTTP, this will send http request to pushbullet if the Light ON, fill the field as the picture
 
