@@ -18,9 +18,11 @@ Hello..Soulisser
 
 This tutorial will make your Souliss ON/OFF Output Timer/T11 typicals Node capable to send notification to Pushbullet.
 
-In teory it will work on all Souliss board, as long as Souliss Node connected to internet, but this tested on ESP8266 only..
+In teory it will work on all Souliss board, as long as Souliss Node connected to internet, but this tested on ESP8266 only.
 
-First we got to declare ThingSpeak API and ThingSpeak server, add this in top of your sketch
+Create the T11 Node as Souliss example, you can find a lot of example at Souliss github for many different board.
+
+Then we add codes into the Arduino sketch, first we got to declare ThingSpeak API and ThingSpeak server, add this in top of your sketch
 
 ```c
 // ThingSpeak API
@@ -115,7 +117,7 @@ into something like this :
 {"type": "note", "title": "Message from Home", "body": "LIGHT ON"}
 ` 
 
-- Back to ThingSpeak APPS, now click React app, create new React, this will executed ThingHTTP is some condition meet.. we create a new React for Light ON
+- Back to ThingSpeak APPS, now click React app, create new React, this will execute ThingHTTP is some condition meet.. we create a new React for Light ON
 
 ![ts4](https://cloud.githubusercontent.com/assets/12625575/8893846/a40e9eaa-33cb-11e5-9e30-f60f7544a95d.PNG)
 
