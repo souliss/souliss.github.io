@@ -1,6 +1,24 @@
-Hello..
+---
+layout: article
+title: "Souliss and Pushbullet"
+categories: media
+excerpt: "This will make a Pushbullet Notification with SoulissApp"
+ads: false
+share: true
+author: lesjaw
+image:
+  feature: 
+  teaser: 
+  credit: 
+  creditlink: 
+---
+
+
+Hello..Soulisser
 
 This tutorial will make your Souliss ON/OFF Output Timer/T11 typicals Node capable to send notification to Pushbullet.
+
+In teory it will work on Souliss board, as long as Souliss Node connected to internet, tested on ESP8266 only..
 
 First we got to declare ThingSpeak API and ThingSpeak server, add this in top of your sketch
 
@@ -12,17 +30,17 @@ const char* serverTS = "api.thingspeak.com";
 
 In your Souliss Node sketch you should have a code to read the pin state..
 
-`````
+```
  int inputState = digitalRead(RELAY);
           if (inputState != oldInputState){
               sendInputState(inputState);
               oldInputState = inputState;
           } 
-`````
+```
 
 Put above code in void loop(), don't forget to define oldInputState as bool in void setup()
 
-`  
+`
   bool oldInputState;
 ` 
 
@@ -34,7 +52,7 @@ Then in void setup you also should have oldInputState value, it easy, add this b
 
 Now the last thing we should do in the arduino sketch is create a function of sendInputState, put this after void loop()
 
-``````````````````````````````
+```
   // send data to ThingSpeak.com
   void sendInputState(bool inputState){
     Serial.println(inputState); 
@@ -65,7 +83,7 @@ Now the last thing we should do in the arduino sketch is create a function of se
   Serial.println("Client to send Stoped");
   
 }
-``````````````````````````````
+```
 
 Now we need to setup ThingSpeak Channel, ThingHTTP and React.. but first you will need Pushbullet token, so create pushbullet account, then create ThingSpeak account..
 
@@ -108,3 +126,5 @@ into something like this :
 You are done, now everytime you pressing ON OFF button in SoulissApp you should get notification in Pushbullet..
 
 ![lastts](https://cloud.githubusercontent.com/assets/12625575/8894006/5a3d35ec-33d1-11e5-8a17-ba911328b059.PNG)
+
+
