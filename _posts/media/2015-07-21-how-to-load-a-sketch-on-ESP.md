@@ -9,8 +9,8 @@ author: juanpintom
 image:
   feature: 2015-07/esp12_1600.jpg
   teaser: 2015-07/esp12_400.jpg 
-  credit: 
-  creditlink:
+  credit: ESP8266 Community
+  creditlink: http://www.esp8266.com/
 ---
 
 # How to Load a Sketch on ESP Module
