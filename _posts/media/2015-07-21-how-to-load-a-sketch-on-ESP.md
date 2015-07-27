@@ -13,14 +13,14 @@ image:
   creditlink: http://alink.com
 ---
 
-#### How to Load a Sketch on ESP12
+# How to Load a Sketch on ESP12
 
-### Material Needed:
+## Material Needed:
   -ESP12 module
   -USB to Serial Converter (FTDI PL2303 - CH340 and others)
   
-### Wiring:
-## Minimal Hardware Setup for Bootloading only ##
+## Wiring:
+### Minimal Hardware Setup for Bootloading only ##
 ESPxx Hardware
 
 | PIN           | Resistor | Serial Adapter  |
@@ -37,7 +37,7 @@ ESPxx Hardware
 * Note
 	- if no RTS is used a manual power toggle is needed
 
-## Minimal Hardware Setup for Running only ##
+### Minimal Hardware Setup for Running only ##
 
 ESPxx Hardware
 
@@ -49,14 +49,14 @@ ESPxx Hardware
 | GPIO15        | PullDown |                 |
 | CH_PD         | PullUp   |                 |
 
-## Minimal
+### Minimal
 ![ESP min](https://raw.githubusercontent.com/Links2004/Arduino/esp8266/docs/ESP_min.png)
 
-## Improved Stability
+### Improved Stability
 ![ESP improved stability](https://raw.githubusercontent.com/Links2004/Arduino/esp8266/docs/ESP_improved_stability.png)
 
 
-#### Software needed: Arduino IDE
+## Software needed: Arduino IDE
 
 ### Steps to configure Arduino IDE:
 •Install Arduino 1.6.5 from the Arduino website.
