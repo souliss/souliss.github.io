@@ -7,8 +7,8 @@ ads: false
 share: true
 author: juanpintom
 image:
-  feature: 
-  teaser: 
+  feature: 2015-07/esp12_1600.jpg
+  teaser: 2015-07/esp12_400.jpg 
   credit: 
   creditlink:
 ---
