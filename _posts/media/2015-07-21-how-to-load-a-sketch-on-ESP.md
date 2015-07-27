@@ -2,7 +2,7 @@
 layout: article
 title: "How to load a sketch on ESP12 Module."
 categories: media
-excerpt: "Custom written post descriptions are the way to go... if you're not lazy."
+excerpt: "First steps to load Souliss on ESP8266 WiFi modules"
 ads: false
 share: true
 author: juanpintom
@@ -14,6 +14,8 @@ image:
 ---
 
 # How to Load a Sketch on ESP Module
+
+This tutorial shows how to load custom code on the ESP8266 and relevant breakout modules, like ESP-01 or ESP-12, this is based on the porting of Arduino cores for the ESP8266 microcontroller.
 
 ## Material Needed:
   -ESP12 module
