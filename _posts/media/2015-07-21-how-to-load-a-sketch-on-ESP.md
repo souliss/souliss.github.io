@@ -13,7 +13,7 @@ image:
   creditlink: http://alink.com
 ---
 
-# How to Load a Sketch on ESP12
+# How to Load a Sketch on ESP Module
 
 ## Material Needed:
   -ESP12 module
@@ -67,7 +67,7 @@ ESPxx Hardware
 
 •Open Boards Manager from Tools > Board menu and install esp8266 platform (and don't forget to select your ESP8266 board from Tools > Board menu after installation).
 
-•Install the Souliss library on Library Manager of Arduino IDE
+•Install "Souliss" library on Library Manager of Arduino IDE
 
 •Load Helloworld example from Souliss: e01_Hello_ESP8266.ino
 
