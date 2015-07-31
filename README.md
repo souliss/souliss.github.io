@@ -1,6 +1,6 @@
 # Souliss landing page, based on Jekyll
 
-This is a collaboartive website based on Github pages, every one can contribute changing contents and adding blog post. You can fork the website and work locally on your device, requesting then a pull-request to include your contribution in the main repository and have them available in the website.
+This is a collaboartive website (visible at http://souliss.github.io) based on Github pages, every one can contribute changing contents and adding blog post. You can fork the website and work locally on your device, requesting then a pull-request to include your contribution in the main repository and have them available in the website.
 
 Contributing to the website is like contributing to Souliss code, because is a git repository, you don't even need to know HTML, because the pages are rendered with Jekyll and add a post is like add a page in the wiki.
 You can contribute directly from the GitHub website or using any other Git tool.
