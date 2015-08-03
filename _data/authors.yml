@@ -19,7 +19,17 @@ shine_angelic:
   twitter: 
   google:
     plus: 
-  
+
+tonino_fazio:
+  name: Tonino
+  web: https://github.com/fazioa
+  email: antonino.fazio@souliss.net
+  bio: "Enthusiast of electronics, programming, graphics and photo, trumpet and chocolate. Fanatic of the DIY."
+  avatar: tonino160.jpg
+  twitter: 
+  google:
+    plus:
+
 jaws:
   name: Lesjaw
   web: https://github.com/lesjaw
@@ -38,14 +48,4 @@ juanpintom:
   avatar: juanpintom160.jpg
   twitter: 
   google:
-    plus: +juanpintom    
-	
-tonino_fazio:
-  name: Tonino
-  web: https://github.com/fazioa
-  email: antonino.fazio@souliss.net
-  bio: "Enthusiast of electronics, programming, graphics and photo, trumpet and chocolate. Fanatic of the DIY."
-  avatar: tonino160.jpg
-  twitter: 
-  google:
-    plus:
+    plus: +juanpintom
