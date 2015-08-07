@@ -32,8 +32,8 @@ The minimal setup required to load a new sketch on your ESP8266 based module is 
 | :---: |  :---:  |  :---:  |
 | VCC           |          | VCC (3.3V)      |
 | GND           |          | GND             |
-| TX or GPIO2   |          | RX              |
-| RX            |          | TX              |
+| TX or GPIO1   |          | RX              |
+| RX or GPIO3   |          | TX              |
 | GPIO0         |          | GND             |
 | Reset         |          | RTS*            |
 | GPIO15        | PullDown |                 |
