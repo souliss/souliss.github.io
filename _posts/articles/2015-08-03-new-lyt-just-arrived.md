@@ -20,3 +20,7 @@ Just received from our friends at [Authometion](http://authometion.com/) a sampl
 Those will be officially included in the next Souliss release, so lets start to get your lamps on the [Authometion store!](http://authometion.com/shop/it/)
 
 ![](https://github.com/souliss/souliss.github.io/blob/master/images/2015-08/LYT shield.jpg?raw=true)
+
+Have a look of what you can do using Souliss and LYT in the following video
+
+<iframe width="1600" height="800" src="https://www.youtube.com/embed/j4_wvbMCjWo" frameborder="0" allowfullscreen></iframe>
