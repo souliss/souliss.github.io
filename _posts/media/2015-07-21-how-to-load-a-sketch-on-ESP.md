@@ -13,8 +13,6 @@ image:
   creditlink: http://www.esp8266.com/
 ---
 
-# How to Load a Sketch on ESP Module
-
 This tutorial shows how to load custom code on the ESP8266 and relevant breakout modules, like ESP-01 or ESP-12, this is based on the porting of Arduino cores for the ESP8266 microcontroller.
 
 We focus on ESP-12, but this tutorial applies for all breakout modules based on ESP8266, you just need to cross check the pin assignment on the PCB, to start you need:
