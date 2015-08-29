@@ -6,10 +6,10 @@ author: plinio_seniore
 excerpt: "Andreas just found an ESP8266 in a cheap RGBWW LED Controller."
 tags: [arduino, esp8266, led strib, rgb led]
 modified: 2015-08-29
+ads: false  
 image:
   feature: 2015-08/rgbww_esp8266.JPG
-  teaser: 2015-08/rgbww_esp8266-teaser.JPG
-ads: false  
+  teaser: 2015-08/rgbww_esp8266-teaser.jpg
   credit: Chaozlabs
   creditlink: http://chaozlabs.blogspot.de/2015/08/esp8266-in-wild-wifi-led-controller-hack.html?m=1
 ---
@@ -48,12 +48,12 @@ This device sells at 10$ for a single piece and can be used with any custom Ardu
 #include <EEPROM.h>
 #include "Souliss.h"
 
-#define LEDCONTROL          0               // This is the memory slot for the logic that handle the light
-#define LEDRED              1               // This is the memory slot for the logic that handle the light
-#define LEDGREEN            2               // This is the memory slot for the logic that handle the light
-#define LEDBLUE             3               // This is the memory slot for the logic that handle the light
-#define LEDWHITE1			4               // This is the memory slot for the logic that handle the light
-#define LEDWHITE2			6               // This is the memory slot for the logic that handle the light
+#define LEDCONTROL        0
+#define LEDRED            1
+#define LEDGREEN          2
+#define LEDBLUE           3
+#define LEDWHITE1         4
+#define LEDWHITE2         6
 
 void setup()
 {   
@@ -64,8 +64,8 @@ void setup()
     SetAsGateway(myvNet_dhcp);                  // Set this node as gateway for SoulissApp                        
                 
     Set_LED_Strip(LEDCONTROL);                  // Set a logic to control a LED strip
-	Set_DimmableLight(LEDWHITE1);
-	Set_DimmableLight(LEDWHITE2);
+    Set_DimmableLight(LEDWHITE1);
+    Set_DimmableLight(LEDWHITE2);
    
     // Define inputs, outputs pins
     pinMode(12, OUTPUT);                 // Power the LED
@@ -86,8 +86,8 @@ void loop()
                     
             // Execute the logic that handle the LED
             Logic_LED_Strip(LEDCONTROL);
-			Logic_DimmableLight(LEDWHITE1);
-			Logic_DimmableLight(LEDWHITE2);
+            Logic_DimmableLight(LEDWHITE1);
+            Logic_DimmableLight(LEDWHITE2);
 
             // Use the output values to control the PWM
             analogWrite(12, mOutput(LEDRED)*4);
@@ -100,8 +100,8 @@ void loop()
             ProcessCommunication();
         } 
 
-		// Process the other Gateway stuffs
-		FAST_GatewayComms();
+        // Process the other Gateway stuffs
+        FAST_GatewayComms();
           
     }
     EXECUTESLOW()
@@ -112,8 +112,8 @@ void loop()
         
             // The timer handle timed-on states
             Timer_LED_Strip(LEDCONTROL); 
-			Timer_DimmableLight(LEDWHITE1);
-			Timer_DimmableLight(LEDWHITE2);                       
+            Timer_DimmableLight(LEDWHITE1);
+            Timer_DimmableLight(LEDWHITE2);                       
         }     
     }       
 } 
