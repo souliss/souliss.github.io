@@ -66,7 +66,7 @@ The Arduino IDE allow an easy add-on of cores that has been developed by the com
 
 * Install the latest Souliss' supported Arduino IDE and have a general read of the [Getting Started guide](https://github.com/souliss/souliss/wiki/Getting%20Started%20with%20Souliss).
 * Start Arduino and open Perferences window.
-* Enter http://arduino.esp8266.com/package_esp8266com_index.json into Additional Board Manager URLs field. You can add multiple URLs, separating them with commas.
+* Enter http://arduino.esp8266.com/stable/package_esp8266com_index.json into Additional Board Manager URLs field. You can add multiple URLs, separating them with commas.
 * Open Boards Manager from Tools > Board menu and install **ESP8266** platform (you will need to select your ESP8266 board from Tools > Board menu after installation).
 * Install Souliss library on [Library Manager](https://github.com/souliss/souliss/wiki/Your%20First%20Upload) of Arduino IDE
 * Load the Hello World example [e01_Hello_ESP8266](https://github.com/souliss/souliss/tree/friariello/examples/WiFi/e01_Hello_ESP8266)
