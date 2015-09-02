@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "How to load a sketch on ESP12 Module."
+title: "How to load Souliss on ESP8266."
 categories: media
 excerpt: "First steps to load Souliss on ESP8266 WiFi modules"
 ads: false
@@ -91,8 +91,8 @@ You need to connect your USB to Serial converter according to the following tabl
 
 ![](http://upload.wikimedia.org/wikipedia/en/thumb/d/d1/UEXTPINS.jpg/220px-UEXTPINS.jpg)
 
-| PIN | Resistor | Serial Adapter  |
-| :---: |  :---:  |  :---:  |
+| ESP8266-EVB |  Serial Adapter  |
+| :---: |  :---:  |
 | GND           |          | GND             |
 | TX            |          | RX              |
 | RX            |          | TX              |
