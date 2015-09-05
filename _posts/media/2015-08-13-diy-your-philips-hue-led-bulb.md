@@ -40,7 +40,7 @@ As first step, we should load the [Authometion libraries](https://drive.google.c
 
 ![](https://github.com/souliss/souliss.github.io/blob/master/images/2015-08/lytshield-softserial.jpg?raw=true)
 
-Ensure that the jumper on your shield are all on the left side as per previous picture, this means that PL1167 is using PIN10 as Chip Select (doesn't play nice with Arduino Ethernet, be aware) and SoftwareSerial to communicate with ESP8266. Load the **demo_firmware_lytwifi.ino** from Examples->Lytwifi menu and start the Serial Monitor, ensure that you are matching the baudrate of your sketch (default is 9600 bps) and type the following command
+Ensure that the jumper on your shield are all on the left side as per previous picture, this means that PL1167 is using PIN10 as Chip Select (doesn't play nice with Arduino Ethernet, be aware) and SoftwareSerial to communicate with ESP8266. Load the **demo_firmware_lytwifi.ino** from Examples->Lytwifi menu and start the Serial Monitor, ensure that you are matching the baudrate of your sketch (default is 9600 bps) and the Carriare Return is set, then type the following command
 
 {% highlight c %}
 PON,0,0,1	
@@ -79,7 +79,7 @@ As stated before, you will have two instanced of Souliss and that's why you will
 
 **Load Souliss on ESP8266**
 
-Remove the shield from the Arduino and connect the pins to a USB to USART at 3v3 as shown in the below picture (pay attention, the brown wire is connected on the back of the shield on the GND and the last two pins on JP4 need a jumper while updating the sketch). You need to setup the Arduino IDE for the support of ESP8266, [this tutorial](http://souliss.github.io/media/how-to-load-a-sketch-on-ESP/) can help you if you haven't done before; select **Generic ESP8266** for the IDE menu and use 80 MHz as clock option leaving all the others at default settings.
+Remove the shield from the Arduino and connect the pins to a USB to USART at 3v3 as shown in the below picture (pay attention, the brown wire is connected on the back of the shield on the GND and the last two pins on JP4 need a jumper **only** while updating the sketch). You need to setup the Arduino IDE for the support of ESP8266, [this tutorial](http://souliss.github.io/media/how-to-load-a-sketch-on-ESP/) can help you if you haven't done before; select **Generic ESP8266** for the IDE menu and use 80 MHz as clock option leaving all the others at default settings.
 
 ![](https://github.com/souliss/souliss.github.io/blob/master/images/2015-08/esp8266_connection.jpg?raw=true)
 
