@@ -16,9 +16,9 @@ shine_angelic:
   email: alessandro.delpex@souliss.net
   bio: "Java and Oracle, goth, stereoscoping, digital photo, synths, drums, fish tanks."
   avatar: shine160.jpg
-  twitter: 
+  twitter:
   google:
-    plus: 
+    plus:
 
 tonino_fazio:
   name: Tonino
@@ -26,7 +26,7 @@ tonino_fazio:
   email: antonino.fazio@souliss.net
   bio: "Enthusiast of electronics, programming, graphics and photo, trumpet and chocolate. Fanatic of the DIY."
   avatar: tonino160.jpg
-  twitter: 
+  twitter:
   google:
     plus:
 
@@ -36,9 +36,9 @@ jaws:
   email: lesjaw@gmail.com
   bio: "Microcontroller addicted."
   avatar: jaws160.jpg
-  twitter: 
+  twitter:
   google:
-    plus:  
+    plus:
 
 juanpintom:
   name: Juan Pinto
@@ -46,6 +46,16 @@ juanpintom:
   email: juanpintom@gmail.com
   bio: "Software, Hardware, Domotic and 3dPrinting enthusiast"
   avatar: juanpintom160.jpg
-  twitter: 
+  twitter:
   google:
     plus: +juanpintom
+
+ribico:
+  name: Gabriele Ribichini
+  web: https://github.com/ribico
+  email: gabriele@ribichini.net
+  bio: "Measurement specialist to earn money, DIY to spend them !"
+  avatar: ribico160.png
+  twitter: gribico
+  google:
+    plus: +gabriele.ribichini
