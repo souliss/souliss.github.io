@@ -1,9 +1,9 @@
 ---
 layout: article
-title: "Does we need the Internet of Things?"
+title: "Do we need the Internet of Things?"
 categories: articles
 author: plinio_seniore
-excerpt: "Does we need the Internet of Things?"
+excerpt: "Do we need the Internet of Things?"
 tags: [arduino, internet of things, iot, souliss]
 modified: 2013-11-24
 image:
@@ -15,7 +15,7 @@ redirect_from: "2013/11/does-we-need-internet-of-things.html"
 
 That question had in my head an answer from long time, years before starting Souliss, home automation just sucks, we don't need it. That idea is still in my mind and I really trust that we really don't need any home automation, smart homing or internet of things to get in touch with our devices.
 
-I know, what I'm writing looks suspicious, because I've started Souliss an year and half ago and still working it. So why? Basically, I've started designing a networking solution that later was applied to something like an home automation system, that was you can found in the first release. Nothing more.
+I know, what I'm writing looks suspicious, because I've started Souliss an year and half ago and still working it. So why? Basically, I've started designing a networking solution that later was applied to something like an home automation system, that's what you can find in the first release. Nothing more.
 
 That isn't giving an answer, does we really need that? No, we don't at least until we will design things that just goes ON and OFF as in the past.
 Looking in the proposed application of a well know Internet of Things company, we will still found application that yet exist and just moved into the cool Internet of Things. 
