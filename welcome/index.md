@@ -34,6 +34,6 @@ You use the **Internet** connectivity only when is strictly required, as example
 
 ## Interact from your Smartphone and build Scenarios
 
-Control your devices from your *smartphone* is striaghtforward, using **SoulissApp** for Android you can directly access your Things without relay on a central server, but if you need it a server can be used to build scenario and get a webhook to cloud services. This is done through **openHAB** an open-source automation server that offer cloud and webservices for your smart objects and home.
+Control your devices from your *smartphone* is striaghtforward, using **SoulissApp** for Android you can directly access your Things without rely on a central server, but if you need it a server can be used to build scenario and get a webhook to cloud services. This is done through **openHAB** an open-source automation server that offer cloud and webservices for your smart objects and home.
 
 <p class="post-excerpt" align="center"><img src="{{ site.url }}/images/userinterface800.png" alt="{{ site.title }}"></p> 
