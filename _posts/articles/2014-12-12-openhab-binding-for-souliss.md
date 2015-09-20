@@ -2,7 +2,7 @@
 layout: article
 title: "openHAB Binding for Souliss"
 categories: articles
-author: fazioa
+author: tonino_fazio
 excerpt: "Get your Souliss network in openHAB with the new binding"
 tags: [arduino, openhab, binding, souliss]
 modified: 2014-12-12

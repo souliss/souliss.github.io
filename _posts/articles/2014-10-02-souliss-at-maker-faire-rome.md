@@ -19,8 +19,8 @@ A month ago [Michele has started a discussion](https://groups.google.com/forum/?
 
 Here some pictures from the faire, 
 
-![](https://github.com/souliss/souliss.github.io/blob/master/images/2015-08/titino2.jpg?raw=true)
+![](https://github.com/souliss/souliss.github.io/blob/master/images/2014-10/titino2.jpg?raw=true)
 
-![](https://github.com/souliss/souliss.github.io/blob/master/images/2015-08/titino2.jpg?raw=true)
+![](https://github.com/souliss/souliss.github.io/blob/master/images/2014-10/titino3.jpg?raw=true)
 
 Thanks Michele!
