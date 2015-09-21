@@ -22,7 +22,7 @@ Just a couple of days ago we also got the official inclusion of the [Tonino's bi
 
 To use ESP8266 you need to install the relevant cores by ESP8266 community, this can be done directly from the Board Manager of your IDE using the instruction [here](https://github.com/esp8266/Arduino). Then load the following sketch and follow the instruction to [configure the binding](https://github.com/openhab/openhab/wiki/Souliss-Arduino-based-SmartHome-Binding).
 
-```C
+{% highlight c %}
 /**************************************************************************
     Souliss - Hello World
     
@@ -96,7 +96,7 @@ void loop()
         
     }
 } 
-```
+{% endhighlight %}
 
 Ensure that the pins available on your module matches the one in the sketches, so that you can control it via openHAB and of course SoulissApp.
 

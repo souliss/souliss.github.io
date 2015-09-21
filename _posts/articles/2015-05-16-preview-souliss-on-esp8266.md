@@ -19,7 +19,7 @@ The Arduino core for the ESP8266 is constantly updated and for this reason ~~we 
 
 Run this sketch, considering the GPIO available on your module, this use GPIO5 that is used in Olimex ESP8266-EVB with a relay.
 
-```C
+{% highlight c %}
 /**************************************************************************  
    Souliss - Hello World for Expressif ESP8266  
    This is the basic example, create a software push-button on Android  
@@ -65,7 +65,7 @@ Run this sketch, considering the GPIO available on your module, this use GPIO5 t
      FAST_GatewayComms();                      
    }  
  }  
-```
+{% endhighlight %}
 
 If you have the Olimex module, is enough to press the button and then power the module, this set the module in firmware mode and let you load the code from the IDE using an FTDI at 3.3v as shown in [Olimex post](https://olimex.wordpress.com/2015/03/31/programming-esp8266-evb-with-arduino-ide/).
 
