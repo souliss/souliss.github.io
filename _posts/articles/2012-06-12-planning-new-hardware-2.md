@@ -17,7 +17,7 @@ The board is equipped with three relays and four configurable I/O with an RS485 
 The switching regulator offer a suitable efficiency above 70% in test conditions, providing 5.4 V at 430 mA with an input voltage of 31.4 V. A linear regulator with the same input-output drop (26 V) can offer an efficiency near to 20%, out of the heat constrains. The board can work either at 12 or 24 V, and is related to the equipped relays that gets the supply directly from the inlet feed.
 
 
-![](https://github.com/souliss/souliss.github.io/blob/master/images/2012-06/Domoduino12b.png?raw=true)
+![](http://souliss.net/images/2012-06/Domoduino12b.png?raw=true)
 
 Souliss will support this board in the framework, using dedicated drivers for RS485 management. A peer-to-peer driver with collision management it will be the goal to fully support this board.
 

@@ -17,4 +17,4 @@ Isn't a surprice, Google wasn't longer working on Code, their hosting project th
 
 We will miss Code, mainly for the simple and intuitive web interface, but is now time to move on GitHub! Starting from today Souliss project code has been migrated and is now time to start using the amazing features that GitHub offers and were not available in Code.
 
-Join us on [http://souliss.github.io](http://souliss.github.io/), register on GitHub and fork the code to get your own repository!
+Join us on [http://souliss.net](http://souliss.net/), register on GitHub and fork the code to get your own repository!

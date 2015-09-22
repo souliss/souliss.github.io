@@ -27,4 +27,4 @@ The keywords has been translated, so you should talk in the language of your and
 
 Out of voice recognition other bugs were fixed, TAG section should now be almost ok. You can now sort TAGs, save them with backup function and restore as needed. Fahrenheit temperatures have been added, even though the process of converting every temperature to this unit is not yet complete.
 
-[Getting started](http://souliss.github.io/getting-started/) downloading SoulissApp from the [Play Store](https://play.google.com/store/apps/details?id=it.angelic.soulissclient).
+[Getting started](http://souliss.net/getting-started/) downloading SoulissApp from the [Play Store](https://play.google.com/store/apps/details?id=it.angelic.soulissclient).

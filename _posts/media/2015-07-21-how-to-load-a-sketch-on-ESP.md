@@ -80,7 +80,7 @@ The module will start using the code loaded in its FLASH memory.
 
 The [Olimex ESP8266-EVB](https://www.olimex.com/Products/IoT/ESP8266-EVB/open-source-hardware) is an evaluation board for quick prototyping with ESP8266, it doesn't require you any soldering action.
 
-![](https://github.com/souliss/souliss.github.io/blob/master/images/2015-07/ESP8266-EVB.jpg?raw=true)
+![](http://souliss.net/images/2015-07/ESP8266-EVB.jpg?raw=true)
 
 In order to start with this module you need
 

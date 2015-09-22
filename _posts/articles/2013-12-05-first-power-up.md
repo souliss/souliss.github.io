@@ -18,7 +18,7 @@ Starting from a [software CAD and a 3D rendering](http://www.souliss.net/2013/09
 The on-board switching regulator is working fine and the next step is the test of the MOSFET drivers using the shift-registers, that way was inspired by ShiftPWM and allow a single ATmega328 to drive the 12 sink output (2.5A) channels.
 After it will be the time for the RS485 driver and then we will start testing the boards with Souliss.
 
-![](https://github.com/souliss/souliss.github.io/blob/master/images/2013-12/firstpowerup.JPG?raw=true)
+![](http://souliss.net/images/2013-12/firstpowerup.JPG?raw=true)
 
 The board carry-out a large current value (up to 30 A) and for that reason has two ground planes connected in a single point, where the LED power supply will close its loop.
 

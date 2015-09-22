@@ -14,7 +14,7 @@ redirect_from: "2012/12/souliss-on-google-play.html"
 
 The Android application to control your home is now on the Play Store, and can be directly downloaded for free without performing the external installation as previously. Some features still need to be fixed up, but core souliss features are available.
 
-![](https://github.com/souliss/souliss.github.io/blob/master/images/2012-12/googleplay.jpg?raw=true)
+![](http://souliss.net/images/2012-12/googleplay.jpg?raw=true)
 
 Please download the application and give us your feedback, you can even search using the keyword "souliss" on the market itself.
 

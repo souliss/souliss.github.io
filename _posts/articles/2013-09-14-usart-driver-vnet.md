@@ -20,7 +20,7 @@ There was a lot of work out of the topic, we get a final design but end up that 
 One of the challenging is using an RS-485 connection with Souliss, because that standard came up at time of master/slave communication and electrically an RS-485 driven doesn't allow a peer-to-peer communication, because doesn't allow a listen back for collision detection.
 At time of the first Ethernet (10-BASE2), it was basically a modified RS-485 for collision detection with a dedicated transceiver, this is now no longer supported in common transceiver. So, we get inspired by [uLAN](http://ulan.sourceforge.net/index.php) and we are start to design a collision avoidance driver that will run into vNet, in the top image there is the first run between two boards.
 
-![](https://github.com/souliss/souliss.github.io/blob/master/images/2013-09/Domoduino12_Proto_2.jpg?raw=true)
+![](http://souliss.net/images/2013-09/Domoduino12_Proto_2.jpg?raw=true)
 
 The plan is to design three boards based on RS-485, all based on ATmega328 with the followings:
 A relay board, with three (3) relay and direct contact inputs (just wire the standard wall push-button in);

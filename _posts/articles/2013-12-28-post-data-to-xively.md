@@ -16,7 +16,7 @@ redirect_from: "2013/12/post-data-to-xively.html"
 As a complete distributed system, Souliss miss most of the features related to the Internet of Thing world. 
 Actually we are working to define the future of the development activities that will be based on the [Zozzariello](http://www.souliss.net/2013/09/souliss-webserver-codename-zozzariello.html) concept.
 
-![](https://github.com/souliss/souliss.github.io/blob/master/images/2013-12/Schermata 2013-12-28 alle 10.18.07.png?raw=true)
+![](http://souliss.net/images/2013-12/Schermata 2013-12-28 alle 10.18.07.png?raw=true)
 
 Basically, your hook to the internet world will be your Android smartphone, because is one of the most used operative system and in the time it will growth the number of "old" and used devices.
 We always looked to a less-is-better in terms of hardware, and using an "old" Android device as home server is in our philosophy.
@@ -28,4 +28,4 @@ In these days Tonino has released a [Xively](https://xively.com/dev/docs/api/) p
 This is just one step into the IoT features that we are building around Souliss, because thanks to Yaler servers, we will include the ability to reach out a Souliss network from the internet without any setup on your router, as standard IoT product does.
 Our key is that a project that has been designed as distributed can even work locally without any loss of features, that is what most of actual commercial product hasn't.
 
-![](https://github.com/souliss/souliss.github.io/blob/master/images/2013-12/Screenshot_2013-12-27-15-42-10.png?raw=true)
+![](http://souliss.net/images/2013-12/Screenshot_2013-12-27-15-42-10.png?raw=true)

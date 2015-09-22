@@ -15,7 +15,7 @@ It is now time to plan the next features that Souliss requires to grow and becom
 Embedding the TCP/IP stack into the network layer (vNet) for the ENC28J60 support let us go back to the old idea of an user interface directly integrated into the Souliss framework, that means an event-driven binary protocol to share data with boards.
 Actually the interaction is done via an ASCII polling protocol (JSON) commonly used for web application and generally quite simple to use, that's also one more interesting feature, JSON share not only the data but the whole database structure in a quickly way. This give us the opportunity to build an auto-configured user interface based on Android.
 
-![](https://github.com/souliss/souliss.github.io/blob/master/images/2012-08/mblogic.png?raw=true)
+![](http://souliss.net/images/2012-08/mblogic.png?raw=true)
 
 So, JSON is nice, but what's the problem? Sharing data using an ASCII protocol needs more bytes rather than a binary one. Handling this complexity with low performance microcontrollers result in a waste of RAM and CPU for more important features. With Alessandro we are working to include in the future Souliss Android App the binary protocol used for the boards, with some minor modification to handle the user interface.
 
