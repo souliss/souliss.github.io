@@ -26,4 +26,6 @@ At the startup the ESP8266 starts as access point and stars a simple webserver a
 
 ![](http://souliss.net/images/2015-09/WebConfig.png?raw=true)
 
-At the Maker Faire you can preview the LYT8266 running Souliss or any other Arduino sketch.
+At the Maker Faire you can preview the LYT8266 running Souliss or any other Arduino sketch, this include SoulissApp and openHAB as well as all networking feature.
+
+![](http://souliss.net/images/2015-09/SoulissApp.jpg?raw=true)
