@@ -12,7 +12,7 @@ redirect_from: "2012/10/souliss-app-097-with-widgets-we-win.html"
 
 Souliss widgets are available with latest app version. You can choose the device to send the command to and operate your home directly from your Android homescreen.
 
-![](https://github.com/souliss/souliss.github.io/blob/master/images/2012-10/SoulissApp_Widgets.png?raw=true)
+![](http://souliss.net/images/2012-10/SoulissApp_Widgets.png?raw=true)
 
 To operate correctly the app needs to be installed on phone's memory, otherwise the widget won't be listed. The feature is still in development, so please report any stacktrace you'll be willing to.
 

@@ -22,4 +22,4 @@ Is designed to be as much as possible a plug&play solution for sensing data arou
 **Stand a year:** By design all sensor can be switched off as long as the nRF24L01 radio to stay longer between charges. Using LiPo you can size the needed amount energy to keep the node running a year or more.
 {: .notice-info}
 
-![](https://github.com/souliss/souliss.github.io/blob/master/images/2015-06/battery_board-2.jpg?raw=true)
+![](http://souliss.net/images/2015-06/battery_board-2.jpg?raw=true)

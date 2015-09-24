@@ -22,7 +22,7 @@ Basically these contains three mosfet controller via PWM to give power to the LE
 
 Just introduce some theory to understand the differencies between these boards, LEDs are current controlled devices and are able to have an almost fixed voltage across anode and cathode regardless the current that they get.
 
-![](https://github.com/souliss/souliss.github.io/blob/master/images/2013-02/ledchar.gif?raw=true)
+![](http://souliss.net/images/2013-02/ledchar.gif?raw=true)
 
 In the above picture are shown some V-I graphics for different LED color, and basically over a certain threshold the voltage remain fixed also if the current increase (within the current ratings) that basically make the LEDs current controlled devices.
 

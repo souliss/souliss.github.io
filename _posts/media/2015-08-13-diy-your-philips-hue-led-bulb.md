@@ -30,7 +30,7 @@ The PL1167 is a SPI radio wired to the microcontroller of your Arduino board (UN
 
 > We will run two instances of Souliss, one on the ESP8266 and the other on the Arduino board, this because Souliss embed the communication between different nodes and this let us skip the writing of a custom code to link these two devices.
 
-![](https://github.com/souliss/souliss.github.io/blob/master/images/2015-08/lyt_ledbulb.jpg?raw=true)
+![](http://souliss.net/images/2015-08/lyt_ledbulb.jpg?raw=true)
 
 The bulb is a 9 Watt with RGB+W LEDs, the white has a very good bright and colors allow to create moods effect with a good color depth, is bigger than standard bulbs but smaller than other radio controlled ones. It should generally fit in most of the lamps with E27 plug, but you should cross-check if you are using lamps with very small space or smaller plug type.
 
@@ -38,7 +38,7 @@ The bulb is a 9 Watt with RGB+W LEDs, the white has a very good bright and color
 
 As first step, we should load the [Authometion libraries](https://drive.google.com/folderview?id=0BzyjHRwlzov4fkl6c1RoYzRLbGhKOU1PbXRDR3VjZG43emd5QzNEWUozanNjLWo2S2tjdzQ&usp=drive_web#list) and use them to verify if our lamps are working properly. Those are standard Arduino libraries, so import them using the Arduino IDE and restart it, you should see three new more folders in the Example submenu: **LYTWiFi**, PL1167 and Messanger in the LYTWiFi one there is the *demo_firmware_lytwifi.ino* that is a good starting point.
 
-![](https://github.com/souliss/souliss.github.io/blob/master/images/2015-08/lytshield-softserial.jpg?raw=true)
+![](http://souliss.net/images/2015-08/lytshield-softserial.jpg?raw=true)
 
 Ensure that the jumper on your shield are all on the left side as per previous picture, this means that PL1167 is using PIN10 as Chip Select (doesn't play nice with Arduino Ethernet, be aware) and SoftwareSerial to communicate with ESP8266. Load the **demo_firmware_lytwifi.ino** from Examples->Lytwifi menu and start the Serial Monitor, ensure that you are matching the baudrate of your sketch (default is 9600 bps) and the Carriare Return is set, then type the following command
 
@@ -81,9 +81,9 @@ As stated before, you will have two instanced of Souliss and that's why you will
 
 Remove the shield from the Arduino and connect the pins to a USB to USART at 3v3 as shown in the below picture (pay attention, the brown wire is connected on the back of the shield on the GND and the last two pins on JP4 need a jumper **only** while updating the sketch). *Unsure that you are powering the device at 3v3*, in the picture you can see the **red** wire that supply DC.
 
-You need to setup the Arduino IDE for the support of ESP8266, [this tutorial](http://souliss.github.io/media/how-to-load-a-sketch-on-ESP/) can help you if you haven't done before; select **Generic ESP8266** for the IDE menu and use 80 MHz as clock option leaving all the others at default settings.
+You need to setup the Arduino IDE for the support of ESP8266, [this tutorial](http://souliss.net/media/how-to-load-a-sketch-on-ESP/) can help you if you haven't done before; select **Generic ESP8266** for the IDE menu and use 80 MHz as clock option leaving all the others at default settings.
 
-![](https://github.com/souliss/souliss.github.io/blob/master/images/2015-08/esp8266_connection.jpg?raw=true)
+![](http://souliss.net/images/2015-08/esp8266_connection.jpg?raw=true)
 
 Open the [Souliss sketch for ESP8266](https://github.com/souliss/souliss/blob/friariello/examples/LYTBulb/e01_LYTBulb_ESP8266/e01_LYTBulb_ESP8266.ino) from the **Example->souliss->LYT** menu and load it, don't forget to customize the sketch with your SSID and Password. If this succeed, you will see two empty node in SoulissApp.
 The IP address of the ESP8266 depends on the DHCP, so you don't know it in advance. Generally SoulissApp detect a gateway automatically, is enough that no IP address has been set in the application.
@@ -158,7 +158,7 @@ Don't insert the shield on the Arduino, just program the board as standalone usi
 
 Before insert the shield, ensure that the JP1 and JP2 are selected for the Hardware USART as shown in the picture below,
 
-![](https://github.com/souliss/souliss.github.io/blob/master/images/2015-08/lytshield-hardwareserial.jpg?raw=true)
+![](http://souliss.net/images/2015-08/lytshield-hardwareserial.jpg?raw=true)
 
 {% highlight c linenos %}
 /**************************************************************************

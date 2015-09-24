@@ -12,7 +12,7 @@ redirect_from: "2012/05/planning-new-hardware.html"
 
 Provide hardware solution for home automation is one of the main goals of Souliss project, and after the first releases of the Souliss framework we are getting the interest of some hardware developers to include their hardware in Souliss.
 
-![](https://github.com/souliss/souliss.github.io/blob/master/images/2012-05/ArdDomo.jpg?raw=true)
+![](http://souliss.net/images/2012-05/ArdDomo.jpg?raw=true)
 
 
 The first one (that is still in progress) is the [DINo](http://www.souliss.net/2012/04/getting-kmtronic-dino.html) by KMTronic, to support this board we are working on the ENC28J60 including the uIP stack in vNet, this will integrate ENC28J60 based boards (like DINo) in Souliss vNet networks.

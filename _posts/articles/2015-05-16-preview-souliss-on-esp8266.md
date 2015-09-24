@@ -71,13 +71,13 @@ If you have the Olimex module, is enough to press the button and then power the 
 
 Using the ESP-01 and other modules from other vendors require an external connection as per following scheme
 
-![](https://github.com/souliss/souliss.github.io/blob/master/images/2015-05/esp8266-push-button-web.png?raw=true)
+![](http://souliss.net/images/2015-05/esp8266-push-button-web.png?raw=true)
 
 In the sketch insert your WiFi SSID and Password, once loaded the module connects to your router and you can control it directly from SoulissApp (download the [app here](https://play.google.com/store/apps/details?id=it.angelic.soulissclient)) and the app will automatically discover your node.
 
 The result is [SoulissApp](https://github.com/souliss/souliss/wiki/SoulissApp) showing the node and the relay for control,
 
-![](https://github.com/souliss/souliss.github.io/blob/master/images/2015-05/SoulissApp.png?raw=true)
+![](http://souliss.net/images/2015-05/SoulissApp.png?raw=true)
 
 This is just a simple example, because the ESP8266 runs a full Souliss framework and you can communicate with other ESP and AVR based boards (where also wireless-RF and RS485 are supported) to have a full network between your nodes.
 
