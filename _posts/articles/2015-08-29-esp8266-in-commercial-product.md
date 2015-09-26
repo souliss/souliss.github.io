@@ -52,8 +52,10 @@ This device sells at 10$ for a single piece and can be used with any custom Ardu
 #define LEDRED            1
 #define LEDGREEN          2
 #define LEDBLUE           3
-#define LEDWHITE1         4
-#define LEDWHITE2         6
+#define	LEDSTRIP1         4
+#define LEDWHITE1         5
+#define LEDSTRIP2         6
+#define LEDWHITE2         7
 
 void setup()
 {   
@@ -64,8 +66,8 @@ void setup()
     SetAsGateway(myvNet_dhcp);                  // Set this node as gateway for SoulissApp                        
                 
     Set_LED_Strip(LEDCONTROL);                  // Set a logic to control a LED strip
-    Set_DimmableLight(LEDWHITE1);
-    Set_DimmableLight(LEDWHITE2);
+    Set_DimmableLight(LEDSTRIP1);
+    Set_DimmableLight(LEDSTRIP2);
    
     // Define inputs, outputs pins
     pinMode(12, OUTPUT);                 // Power the LED
@@ -90,11 +92,11 @@ void loop()
             Logic_DimmableLight(LEDWHITE2);
 
             // Use the output values to control the PWM
-            analogWrite(12, mOutput(LEDRED+1)*4);
-            analogWrite(13, mOutput(LEDGREEN+1)*4);
-            analogWrite(15, mOutput(LEDBLUE+1)*4);
-            analogWrite(14, mOutput(LEDWHITE1+1)*4);
-            analogWrite(4, mOutput(LEDWHITE2+1)*4);
+            analogWrite(12, mOutput(LEDRED)*4);
+            analogWrite(13, mOutput(LEDGREEN)*4);
+            analogWrite(15, mOutput(LEDBLUE)*4);
+            analogWrite(14, mOutput(LEDWHITE1)*4);
+            analogWrite(4, mOutput(LEDWHITE2)*4);
 
             // Just process communication as fast as the logics
             ProcessCommunication();
