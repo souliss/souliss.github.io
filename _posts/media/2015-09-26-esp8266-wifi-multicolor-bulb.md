@@ -18,12 +18,12 @@ Working with the ESP8266 is always a great experience, it becomes just a matter 
 
 In the last few days we have started working with [Authometion](http://authometion.com/) to support the new LYT8266, a variant of their RGBW LED Bulb that has an ESP8266 inside, so that you should program your sketches directly into the lamp (this is [in contrast with the approach used with LYT88](http://souliss.net/media/diy-your-philips-hue-led-bulb/)).
 
-![](http://souliss.net/images/2015-08/RGBWBulb_comparison.jpg?raw=true)
+![](http://souliss.net/images/2015-09/RGBWBulb_comparison.jpg?raw=true)
 
 A side-to-side comparison show an RF bulb (on the left side) with an ESP8266 (right one), the voltage regulation is based on a switching circuit (on top right, you can see the inductor and regulator) this is due to the high current required by the ESP8266 compared to a standard microcontroller with external RF radio (as on the left side).
 The I/O is basically the same, with one mosfet for each channel used to sink the current from the LEDs powered at near 12 Vdc.
 
-![](http://souliss.net/images/2015-08/ProgrammingConnector.png?raw=true)
+![](http://souliss.net/images/2015-09/ProgrammingConnector.png?raw=true)
 
 Programming the LYT8266 is similar to any other ESP8266 based device, this [tutorial](http://souliss.net/media/how-to-load-a-sketch-on-ESP/) gives the basic to use the Arduino IDE and the ESP8266 cores. On board of the LYT8266 there is a programming connector, is very small and need an adaptor, and expose the TX, RX togheter with GND and GPIO0 and others. You haven't the Vcc, so you should power the ESP8266 board connecting it to main 220 Vac (or 110 Vac), so be careful.
 
@@ -31,11 +31,11 @@ The support for LYT8266 is mostly ready and will be public from Souliss v.7.1, b
 
 As first step, you need to load the [**e02_LYT8266_WiFi_Erase**](https://github.com/souliss/souliss/blob/friariello/examples/LYTBulb/e02_LYT8266_WiFi_Erase/e02_LYT8266_WiFi_Erase.ino) sketch, this will clear the FLASH sector used as EEPROM from random data and later load the [**e02_LYT8266_WiFi_Bulb**](https://github.com/souliss/souliss/tree/friariello/examples/LYTBulb/e02_LYT8266_WiFi_Bulb) this will start the bulb as access point with a web configuration interface.
 
-![](http://souliss.net/images/2015-08/WebConfig.png?raw=true)
+![](http://souliss.net/images/2015-09/WebConfig.png?raw=true)
 
 From the web interface you can configure the WiFi and IP parameters, and select the node as **Gateway** or **Peer**. Configure one bulb as **Gateway** and the others as **Peer**, they will join automatically the Souliss network and will be available in SoulissApp.
 
-![](http://souliss.net/images/2015-08/SoulissApp.jpg?raw=true)
+![](http://souliss.net/images/2015-09/SoulissApp.jpg?raw=true)
 
 Of course once running Souliss your bulbs are in the network, so can be controlled [via openHAB](https://github.com/souliss/souliss/wiki/openHAB%20Binding) or any other device in your network, having as example the light intensity that match the one read from another node with a light sensor outside or in another room.
 
