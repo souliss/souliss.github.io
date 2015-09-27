@@ -27,6 +27,16 @@ The I/O is basically the same, with one mosfet for each channel used to sink the
 
 Programming the LYT8266 is similar to any other ESP8266 based device, this [tutorial](http://souliss.net/media/how-to-load-a-sketch-on-ESP/) gives the basic to use the Arduino IDE and the ESP8266 cores. On board of the LYT8266 there is a programming connector, is very small and need an adaptor, and expose the TX, RX togheter with GND and GPIO0 and others. You haven't the Vcc, so you should power the ESP8266 board connecting it to main 220 Vac (or 110 Vac), so be careful.
 
+On the module there is an ESP-03, so on the Arduino IDE select the COM module as per your operating system and the following settings: 
+
+* Board as Generic ESP8266 Module
+* Flash Mode QIO
+* Flash Frequency 40 MHz
+* Upload Using Serial
+* CPU Frequency 80 MHz
+* Flash Size 1M (512K SPIFFS)
+* Upload Speed 115200
+
 The support for LYT8266 is mostly ready and will be public from Souliss v.7.1, but you can get a preview directly from [GitHub](https://github.com/souliss/souliss), the sketche for the LYT8266 benefits from the new [Runtime Configuration](https://github.com/souliss/souliss/wiki/RuntimeConfiguration) and the [Web Config](https://github.com/souliss/souliss/wiki/WebConfigInterface) interface.
 
 As first step, you need to load the [**e02_LYT8266_WiFi_Erase**](https://github.com/souliss/souliss/blob/friariello/examples/LYTBulb/e02_LYT8266_WiFi_Erase/e02_LYT8266_WiFi_Erase.ino) sketch, this will clear the FLASH sector used as EEPROM from random data and later load the [**e02_LYT8266_WiFi_Bulb**](https://github.com/souliss/souliss/tree/friariello/examples/LYTBulb/e02_LYT8266_WiFi_Bulb) this will start the bulb as access point with a web configuration interface.
