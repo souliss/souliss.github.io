@@ -27,7 +27,8 @@ The use of digital is in **voltage-free** configuration, so you should connect a
 
 ![](http://souliss.net/images/2015-09/Iono-4.jpg?raw=true)
 
-On the output side, the relays have a bistable coil and an embed driver, so from the user point of view are just standard digital outputs but there is no current waste because the relay is designed to mechanical retrieve the last position. As example, in case of power outage the relays will remain in position and devices that were ON before the outage will still be ON once power is back.
+On the output side, the relays have a bistable coil and an embed driver, so from the user point of view are just standard digital outputs but there is no current waste because the relay is designed to mechanical retrieve the last position. As example, in case of power outage relays will remain in their position.
+Generally speaking this nice trick can improve relays life very much.
 
 ![](http://souliss.net/images/2015-09/Iono-2.jpg?raw=true)
 
