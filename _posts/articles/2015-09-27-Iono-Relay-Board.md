@@ -34,6 +34,8 @@ Generally speaking this nice trick can improve relays life very much.
 
 All terminals are detachable, this is also a common feature in industrial protocol, allow easy and reliable replacement of the electronics without have to rewire all the connection and helps in case of constrained spaces.
 
+A **detailed focus** on the I/O design is available on the [IONO website](http://iono.cc) with details on [power supply](https://iono.cc/highlights-power-supply), [inputs](https://iono.cc/highlights-inputs), [digital outputs](https://iono.cc/highlights-power-outputs) and [analog outputs](https://iono.cc/highlights-analog-outputs). The [hardware manual](https://iono.cc/app/uploads/2015/02/iono-hardware-guide.pdf) is also a good reference to understand if the I/O fits your needs and how you can wire it.
+
 > IONO support will be officially available in Souliss v7.1 but as preview you can get it from the current [souliss](https://github.com/souliss/souliss) branch
 
 The guys at IONO will expose their boards at Maker Faire Rome from 16th to 18th October, and they will also setup a small demo with Souliss running on two IONO Ethernet.
