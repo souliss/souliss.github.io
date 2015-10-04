@@ -49,7 +49,7 @@ From the web interface you can configure the WiFi and IP parameters, and select 
 
 Of course once running Souliss your bulbs are in the network, so can be controlled [via openHAB](https://github.com/souliss/souliss/wiki/openHAB%20Binding) or any other device in your network, having as example the light intensity that match the one read from another node with a light sensor outside or in another room.
 
-The ESP8266 in our hands are actually prototypes that will be unvelived at Maker Faire Rome 2015 at the Authometion booth, there will be also a [workshop to have your hands on these devices](http://www.makerfairerome.eu/it/eventi/?ids=74). The sales will start after the faire, so a month or so before having them available on the market.
+The LYT8266 in our hands are actually prototypes that will be unvelived at Maker Faire Rome 2015 at the Authometion booth, there will be also a [workshop to have your hands on these devices](http://www.makerfairerome.eu/it/eventi/?ids=74). The sales will start after the faire, so a month or so before having them available on the market.
 
 Enjoy!
 
