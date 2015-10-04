@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Arduino LED Bulb based on ESP8266 WiFi"
+title: "LYT8226: an Arduino LED Bulb based on ESP8266 WiFi"
 date: 2015-09-26
 modified:
 categories: media
