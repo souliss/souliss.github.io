@@ -15,7 +15,7 @@ redirect_from: "2015/05/preview-run-souliss-on-olimex-esp8266.html"
 
 A couple of weeks ago we got some [Olimex ESP8266-EVB](http://www.souliss.net/2015/04/first-experiment-run-souliss-on-esp8266.html) a small board to quickly prototype on the cheapest WiFi module for DIYers actually on the market, yesterday the porting of Souliss has been completed and now we can run directly on this module without have an Arduino ATmega inbetween.
 
-The Arduino core for the ESP8266 is constantly updated and for this reason ~~we are distributing an Arduino IDE~~ for Windows that includes the tested cores (*update, the IDE has been removed as the cores are now stable*), just ensure that in your Documents/Arduino/libraries there isn't a Souliss library, this because the IDE that we provide contains also the latest Souliss code.
+The Arduino core for the ESP8266 is constantly updated and for this reason we are distributing an Arduino IDE for Windows that includes the tested cores (*update, the IDE has been removed as the cores are now stable* **follow [this tutorial instead](http://souliss.net/media/how-to-load-a-sketch-on-ESP/)**), just ensure that in your Documents/Arduino/libraries there isn't a Souliss library, this because the IDE that we provide contains also the latest Souliss code.
 
 Run this sketch, considering the GPIO available on your module, this use GPIO5 that is used in Olimex ESP8266-EVB with a relay.
 
