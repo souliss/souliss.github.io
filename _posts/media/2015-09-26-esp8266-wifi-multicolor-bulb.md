@@ -20,12 +20,12 @@ In the last few days we have started working with [Authometion](http://authometi
 
 ![](http://souliss.net/images/2015-09/RGBWBulb_comparison.jpg?raw=true)
 
-A side-to-side comparison show an RF bulb (on the left side) with an ESP8266 (right one), the voltage regulation is based on a switching circuit (on top right, you can see the inductor and regulator) this is due to the high current required by the ESP8266 compared to a standard microcontroller with external RF radio (as on the left side).
+A side-to-side comparison show a LYT88 bulb (on the left side) with a LYT8266 (right one), the voltage regulation is based on a switching circuit (on top right, you can see the inductor and regulator) this is due to the high current required by the ESP8266 compared to a standard microcontroller with external RF radio (as on the left side).
 The I/O is basically the same, with one mosfet for each channel used to sink the current from the LEDs powered at near 12 Vdc.
 
 ![](http://souliss.net/images/2015-09/ProgrammingConnector.png?raw=true)
 
-Programming the LYT8266 is similar to any other ESP8266 based device, this [tutorial](http://souliss.net/media/how-to-load-a-sketch-on-ESP/) gives the basic to use the Arduino IDE and the ESP8266 cores. On board of the LYT8266 there is a programming connector, is very small and need an adaptor, and expose the TX, RX togheter with GND and GPIO0 and others. You haven't the Vcc, so you should power the ESP8266 board connecting it to main 220 Vac (or 110 Vac), so be careful.
+Programming the LYT8266 is similar to any other ESP8266 based device, this [tutorial](http://souliss.net/media/how-to-load-a-sketch-on-ESP/) gives the basic to use the Arduino IDE and the ESP8266 cores. On board of the LYT8266 there is a programming connector, is very small and need an adaptor supplied with the dev kit, and expose the TX, RX togheter with GND and GPIO0 and others. You haven't the Vcc, so you should power the ESP8266 board connecting it to main 220 Vac (or 110 Vac), so be careful.
 
 On the module there is an ESP-03, so on the Arduino IDE select the COM module as per your operating system and the following settings: 
 
