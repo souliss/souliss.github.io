@@ -120,7 +120,7 @@ The Arduino IDE allow an easy add-on of cores that has been developed by the com
 * Install the latest Souliss' supported Arduino IDE and have a general read of the [Getting Started guide](https://github.com/souliss/souliss/wiki/Getting%20Started%20with%20Souliss).
 * Start Arduino and open Preferences window.
 * Refer to the latest supported core for Souliss in the [wiki](https://github.com/souliss/souliss/wiki/Supported%20Hardware#supported-cores)
-* Follow the installation instruction [ESP8266 cores for Arduino](https://github.com/esp8266/Arduino), the cores are distributed via the Arduino IDE Board Manager and needs an URL for the distribution of the code
+* Follow the installation instruction [ESP8266 cores for Arduino](https://github.com/esp8266/Arduino), the cores are distributed via the Arduino IDE Board Manager and needs an URL for the distribution of the code. You can check the supported core [here](https://github.com/souliss/souliss/wiki/Supported%20Hardware#supported-cores)
 * As today, the URL to be used is http://arduino.esp8266.com/staging/package_esp8266com_index.json into *Additional Board Manager URLs* field. You can add multiple URLs, separating them with commas.
 * Open Boards Manager from Tools > Board menu and install **ESP8266** platform (you will need to select your ESP8266 board from Tools > Board menu after installation).
 * Install Souliss library on [Library Manager](https://github.com/souliss/souliss/wiki/Your%20First%20Upload) of Arduino IDE
