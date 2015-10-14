@@ -37,6 +37,8 @@ The following formats and sizes applies:
 * **Main Picture :** PNG, JPG 1600x800 pixel
 * **Teaser :** PNG, JPG 400x250 pixel
 
+Ensure that you have the rights to use the image.
+
 ## Add yourself as author
 
 If the file [authors.yml](https://github.com/souliss/souliss.github.io/blob/master/_data/authors.yml) add yourself following the template. Don't forget to add an avatar.
