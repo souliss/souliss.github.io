@@ -24,16 +24,19 @@ The Internet of Things (IoT) starts from your **Intranet of Things**, that's wha
 
 <p class="post-excerpt" align="center"><img src="{{ site.url }}/images/intranetofthings800.png" alt="{{ site.title }}"></p> 
 
-Your **Souliss** network is an *Intranet* of **Arduino** and compatibles devices that communicates over Ethernet, WiFi, wireless point-to-point and RS485 in a seamless fashion, one device will then bridge all your network to the *Internet*. The network layer is behind Souliss and is invisible for the users, each node has an its own identifier, you don't need to know nothing more.
+Your **Souliss** network is an *Intranet* made of **Arduino** and compatibles devices that communicates over Ethernet, WiFi, wireless point-to-point and RS485 in a seamless environment, one device can optionally bridge all your network to the *Internet*. The network layer is behind Souliss and is invisible for the users, each node has an its own identifier, you don't need to know nothing more.
 
 ## A Distributed Approach that goes in the Cloud
 
-The underlaying layer works in *peer-to-peer* so that your internal network is not affected by internet, compared to **cloud-only** devices you don't care if your internet is down, your basically functionality will always be available and neither you have a single point of fault. 
+The underlaying layer works in a *peer-to-peer* environment so that your internal network is not affected by internet, compared to **cloud-only** devices you don't care if your internet is down, your basical functionalities will always be available and neither you have a single point of failure. 
 
-You use the **Internet** connectivity only when is strictly required, as example to control your *Things* while you are abroad or when you need to interact with external cloud service (like schedule your objects via Google Calendar).
+You'll use Internet connectivity only when strictly required, as example to control your *Things* while you are abroad or when you need to interact with external cloud service (like schedule your objects via Google Calendar).
 
 ## Interact from your Smartphone and build Scenarios
 
-Control your devices from your *smartphone* is striaghtforward, using **SoulissApp** for Android you can directly access your Things without rely on a central server, but if you need it a server can be used to build scenario and get a webhook to cloud services. This is done through **openHAB** an open-source automation server that offer cloud and webservices for your smart objects and home.
+Controlling your devices from your *smartphone* is straightforward, using **SoulissApp** for Android you can directly access your Things without relying on a central server, but if you need it a server can be used to build scenarios and get a webhook to cloud services. This is done through **openHAB** an open-source automation server that offer cloud and webservices for your smart objects and home.
+
+<a href="http://souliss.net/getting-started/" class="btn-info">Get Started</a> <a href="https://groups.google.com/forum/#!forum/souliss" class="btn-info">
+join our open community</a>
 
 <p class="post-excerpt" align="center"><img src="{{ site.url }}/images/userinterface800.png" alt="{{ site.title }}"></p> 
