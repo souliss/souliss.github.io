@@ -18,7 +18,7 @@ Working with the ESP8266 is always a great experience, it becomes just a matter 
 
 In the last few days we have started working with [Authometion](http://authometion.com/) to support the new LYT8266, a variant of their RGBW LED Bulb that has an ESP8266 inside, so that you should program your sketches directly into the lamp (this is [in contrast with the approach used with LYT88](http://souliss.net/media/diy-your-philips-hue-led-bulb/)).
 
-> Thanks to the [Arduino cores](https://github.com/esp8266/Arduino) for ESP8266 you can program this bulb directly from the Arduino IDE this include **OTA** (Over the Air) programming and any compatible library of framework, unsing Souliss you have direct access via SoulissApp or [openHAB](https://github.com/souliss/souliss/wiki/openHAB%20Binding).
+> Thanks to the [Arduino cores](https://github.com/esp8266/Arduino) for ESP8266 you can program this bulb directly from the Arduino IDE using **OTA** (Over the Air) programming, running Souliss you have direct access via SoulissApp or [openHAB](https://github.com/souliss/souliss/wiki/openHAB%20Binding).
 
 ![](http://souliss.net/images/2015-09/RGBWBulb_comparison.jpg?raw=true)
 
@@ -37,7 +37,7 @@ You need the following pre-requisites to load a sketch:
 * As today, the URL to be used is http://arduino.esp8266.com/staging/package_esp8266com_index.json into *Additional Board Manager URLs* field. You can add multiple URLs, separating them with commas.
 * Install Souliss library on [Library Manager](https://github.com/souliss/souliss/wiki/Your%20First%20Upload) of Arduino IDE
 
-Once you will power your bulb, if is the first time and has never been configured before, you will see an *Access Point* called **Souliss**, just connect and point your broweser to **http://192.168.4.1**
+Once you will power your bulb, if is the first time and has never been configured before, you will see an *Access Point* called **Souliss**, just connect and point your browser to **http://192.168.4.1**
 
 ![](http://souliss.net/images/2015-09/WebConfig.png?raw=true)
 
@@ -65,7 +65,18 @@ Using the cable to connect via USART can be useful if you don't want OTA or if y
 
 ![](http://souliss.net/images/2015-09/ProgrammingConnector.png?raw=true)
 
-Programming the LYT8266 is similar to any other ESP8266 based device, this [tutorial](http://souliss.net/media/how-to-load-a-sketch-on-ESP/) gives the basic to use the Arduino IDE and the ESP8266 cores. On board of the LYT8266 there is a programming connector, is very small and need an adaptor supplied with the dev kit, and expose the TX, RX togheter with GND and GPIO0 and others. You haven't the Vcc, so you should power the ESP8266 board connecting it to main 220 Vac (or 110 Vac), so be careful.
+
+| PIN | Resistor | Serial Adapter  |
+| :---: |  :---:  |  :---:  |
+| ESP03_URXD    |          | TX            |
+| ESP03_UTXD    |          | RX            |
+| GPIO16_RESET  |          | RTS*          |
+| GPIO0         |          | DTR*          |
+| GND           |          | GND           |
+
+The two connection with * are not mandatory, without you need to turn OFF the bulb and place GPIO0 to GND every time that you want to program it, this is similar to any other ESP8266 based device, this [tutorial](http://souliss.net/media/how-to-load-a-sketch-on-ESP/) gives the basic to use the Arduino IDE and the ESP8266 cores. 
+
+On board of the LYT8266 the programming connector, is very small and need an adaptor supplied with the dev kit, and expose the TX, RX together with GND and GPIO0 and others. You haven't the Vcc, so you should power the ESP8266 board connecting it to main 220 Vac (or 110 Vac), so be careful.
 
 On the module there is an ESP-03, so on the Arduino IDE select the COM module as per your operating system and the following settings: 
 
@@ -79,8 +90,143 @@ On the module there is an ESP-03, so on the Arduino IDE select the COM module as
 
 As first step, you need to load the [**e02_LYT8266_WiFi_Erase**](https://github.com/souliss/souliss/blob/friariello/examples/LYTBulb/e02_LYT8266_WiFi_Erase/e02_LYT8266_WiFi_Erase.ino) sketch, this will clear the FLASH sector used as EEPROM from random data and later load the [**e02_LYT8266_WiFi_Bulb**](https://github.com/souliss/souliss/tree/friariello/examples/LYTBulb/e02_LYT8266_WiFi_Bulb) this will start the bulb as access point with a web configuration interface restoring the factory firmware.
 
+{% highlight c %}
+/**************************************************************************
+   Souliss - LYT8266 WiFi RGBW LED Bulb
+    
+    This is the basic sketch for an LYT8266 a WiFi LED Bulb based on ESP8266,
+    at first boot it starts as access point with a basic web interface to 
+    allow WiFi and Souliss configuration.
+    Info are stored in the module and used at next boot.
+    
+    Configure one module as Gateway for your network and all the other as 
+    Peer. Before load this sketch, run the e02_LYT8266_WiFi_Erase to erase
+    the memory.
+    Once configured, can be accessed via SoulissApp or openHAB.
+ 
+***************************************************************************/
+
+#include <ESP8266WiFi.h>
+#include <ESP8266WebServer.h>
+#include <ESP8266mDNS.h>
+#include <EEPROM.h>
+#include <WiFiUdp.h>
+
+// Configure the Souliss framework
+#include "bconf/LYT8266_LEDBulb.h"          // Load the code directly on the ESP8266
+#include "conf/RuntimeGateway.h"            // This node is a Peer and can became a Gateway at runtime
+#include "conf/DynamicAddressing.h"         // Use dynamically assigned addresses
+#include "conf/WEBCONFinterface.h"          // Enable the WebConfig interface
+
+#include "Souliss.h"
+   
+// Define logic slots, multicolor lights use four slots
+#define LYTLIGHT1           0    
+
+#define RED_STARTUP         0x50
+#define GREEN_STARTUP       0x10
+#define BLUE_STARTUP        0x00
+
+// Setup the libraries for Over The Air Update
+OTA_Setup();
+
+void setup()
+{
+    // Init the network stack and the bulb, turn on with a warm amber
+    Initialize();
+    InitLYT();
+    
+    /****
+        Generally set a PWM output before the connection will lead the 
+        ESP8266 to reboot for a conflict on the FLASH write access.
+        Here we do the configuration during the WebConfig and so we don't
+        need to write anything in the FLASH, and the module can connect
+        to the last used network.
+    ****/
+    SetColor(LYTLIGHT1, RED_STARTUP, GREEN_STARTUP, BLUE_STARTUP);
+
+    // Read the IP configuration from the EEPROM, if not available start
+    // the node as access point.
+    //
+    // If you want to force the device in WebConfiguration mode, power OFF
+    // your router and power OFF and then ON the bulb, you will see an access
+    // point called Souliss.
+    if(!ReadIPConfiguration()) 
+    {   
+        // Pulse a bit
+        LYTPulse();
+
+        // Start the node as access point with a configuration WebServer
+        SetAccessPoint();
+        startWebServer();
+
+        // We have nothing more than the WebServer for the configuration
+        // to run, once configured the node will quit this.
+        while(1)
+        {
+            yield();
+            runWebServer(); 
+        }
+
+    }
+
+    if (IsRuntimeGateway())
+    {
+        // Connect to the WiFi network and get an address from DHCP                      
+        SetAsGateway(myvNet_dhcp);       // Set this node as gateway for SoulissApp  
+        SetAddressingServer();
+    }
+    else 
+    {
+        // This board request an address to the gateway at runtime, no need
+        // to configure any parameter here.
+        SetDynamicAddressing();  
+        GetAddress();
+    } 
+
+    // Define a logic to handle the bulb
+    SetLYTLamps(LYTLIGHT1);
+    
+    // Init the OTA
+    OTA_Init();
+}
+
+void loop()
+{  
+    EXECUTEFAST() {                     
+        UPDATEFAST();   
+        
+        // Is an unusual approach, but to get fast response to color change we run the LYT logic and
+        // basic communication processing at maximum speed.
+        LogicLYTLamps(LYTLIGHT1);       
+        ProcessCommunication();
+      
+        // Run communication as Gateway or Peer
+        if (IsRuntimeGateway())
+            FAST_GatewayComms(); 
+        else 
+            FAST_PeerComms();   
+    }
+
+    EXECUTESLOW() {
+        UPDATESLOW();
+        
+        // Slowly shut down the lamp
+        SLOW_10s() {
+            LYTSleepTimer(LYTLIGHT1);      
+        }       
+        
+        // If running as Peer
+        if (!IsRuntimeGateway())
+            SLOW_PeerJoin();
+    } 
+    
+    // Look for a new sketch to update over the air
+    OTA_Process();
+}    
+{% endhighlight %}
+
 The LYT8266 in our hands are actually prototypes that will be unvelived at Maker Faire Rome 2015 at the Authometion booth, there will be also a [workshop to have your hands on these devices](http://www.makerfairerome.eu/it/eventi/?ids=74). The sales will start after the faire, so a month or so before having them available on the market.
 
 Enjoy!
-
 
