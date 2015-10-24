@@ -24,7 +24,7 @@ The Internet of Things (IoT) starts from your **Intranet of Things**, that's wha
 
 <p class="post-excerpt" align="center"><img src="{{ site.url }}/images/intranetofthings800.png" alt="{{ site.title }}"></p> 
 
-Your **Souliss** network is an *Intranet* made of **Arduino** and compatibles devices that communicates over Ethernet, WiFi, wireless point-to-point and RS485 in a seamless environment, one device can optionally bridge all your network to the *Internet*. The network layer is behind Souliss and is invisible for the users, each node has an its own identifier, you don't need to know nothing more.
+Your **Souliss** network is an *Intranet* made of **Arduino** and compatibles devices that communicates over Ethernet, WiFi, wireless point-to-point and RS485 in a seamless peer-to-peer environment, one device will bridge your network to the *Internet*. The network layer is behind Souliss and is invisible for the users, each node has an its own identifier, you don't need to know nothing more.
 
 ## A Distributed Approach that goes in the Cloud
 
@@ -35,8 +35,3 @@ You'll use Internet connectivity only when strictly required, as example to cont
 ## Interact from your Smartphone and build Scenarios
 
 Controlling your devices from your *smartphone* is straightforward, using **SoulissApp** for Android you can directly access your Things without relying on a central server, but if you need it a server can be used to build scenarios and get a webhook to cloud services. This is done through **openHAB** an open-source automation server that offer cloud and webservices for your smart objects and home.
-
-<a href="http://souliss.net/getting-started/" class="btn-info">Get Started</a> <a href="https://groups.google.com/forum/#!forum/souliss" class="btn-info">
-join our open community</a>
-
-<p class="post-excerpt" align="center"><img src="{{ site.url }}/images/userinterface800.png" alt="{{ site.title }}"></p> 
