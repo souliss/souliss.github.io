@@ -2,7 +2,7 @@
 layout: article
 title: "Maker Faire Rome 2015"
 categories: articles
-author: plinio_seniore
+author: tonino_fazio
 excerpt: "We have been there with Authometion and IONO"
 tags: [authometion, lyt, esp8266, wifi, IONO, maker faire, rome]
 modified: 2015-10-24
