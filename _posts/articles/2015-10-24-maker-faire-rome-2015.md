@@ -9,7 +9,7 @@ modified: 2015-10-24
 ads: false  
 image:
   feature: 2015-10/soulissteam.jpg
-  teaser: 2015-10/logomfr15.png
+  teaser: 2015-10/logomfr15.jpg
 ---
 
 Are almost three years that Maker Faire is in Rome for the European edition, this year we have powered the Authometion and IONO booths with Souliss and had the change to meet them and have some fun looking over the many expositor of the faire.
