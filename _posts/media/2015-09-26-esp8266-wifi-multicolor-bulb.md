@@ -52,7 +52,7 @@ Your bulbs have full features, but if you want to upload a new sketch you just n
 * Flash Frequency 40 MHz
 * Upload Using **OTA**
 * CPU Frequency 80 MHz
-* Flash Size 512K (64K SPIFFS)
+* Flash Size 1M (64K SPIFFS)
 * Upload Speed 115200
 
 > In the Port sub-menu you will see the bulb and its OTA IP address which allows you to upload a new sketch over wifi as if it was connected via cable (assuming your Arduino IDE computer has wifi access to the ESP device of course).
