@@ -41,27 +41,27 @@ Once you will power your bulb, if is the first time and has never been configure
 
 ![](http://souliss.net/images/2015-09/WebConfig.png?raw=true)
 
-You get a web interface from where you can configure the WiFi and IP parameters, and select the node as **Gateway** or **Peer**. Configure one bulb as **Gateway** and the others as **Peer**, they will build automatically a Souliss network and will be available in SoulissApp.
+You get a web interface from where you can configure the WiFi and IP parameters, and select the node as **Gateway** or **Peer**. Configure one bulb as **Gateway** and the others as **Peer**, they will build automatically a Souliss network and will be available in SoulissApp. Note: if the DHCP box is ticked it will over-ride a manually entered address if present - and likewise for the Gateway address - so don't tick those boxes if you wish to manually specify the addresses.  
 
 ![](http://souliss.net/images/2015-09/SoulissApp.jpg?raw=true)
 
-You bulbs has full features, but if you want to upload a new sketch you just need to go in the Arduino IDE and set the following parameters:
+Your bulbs have full features, but if you want to upload a new sketch you just need to go in the Arduino IDE and set the following parameters:
 
 * Board as Generic ESP8266 Module
 * Flash Mode QIO
 * Flash Frequency 40 MHz
 * Upload Using **OTA**
 * CPU Frequency 80 MHz
-* Flash Size 1M (64K SPIFFS)
+* Flash Size 512K (64K SPIFFS)
 * Upload Speed 115200
 
-> In the Port sub-menu you will see the bulb and its IP address and you can upload a new sketch as it was connected via cable.
+> In the Port sub-menu you will see the bulb and its OTA IP address which allows you to upload a new sketch over wifi as if it was connected via cable (assuming your Arduino IDE computer has wifi access to the ESP device of course).
 
-Is very important that you upload always an OTA enabled sketch, otherwise the next time you want be able to upload a new sketch over the air and you will need to connect via the cable. Start from the [**e02_LYT8266_WiFi_Bulb.ino**](https://github.com/souliss/souliss/blob/friariello/examples/LYTBulb/e02_LYT8266_WiFi_Bulb/e02_LYT8266_WiFi_Bulb.ino) to build your own sketch.
+It is very important that you always upload an OTA enabled sketch each time, otherwise you will not see the OTA device available in the Port sub-menu for uploading to over the air, and therefore you will need to connect and upload via the cable. Start from the [**e02_LYT8266_WiFi_Bulb.ino**](https://github.com/souliss/souliss/blob/friariello/examples/LYTBulb/e02_LYT8266_WiFi_Bulb/e02_LYT8266_WiFi_Bulb.ino) to build your own sketch.
 
 **LOAD YOUR SKETCH VIA USART CABLE**
 
-Using the cable to connect via USART can be useful if you don't want OTA or if you have bricked your OTA sketch, more you can use the whole flash size (1 MByte) were on OTA you are able to use only 512 KBytes. All the previous prerequisite applies also for this case.
+Using the cable to connect via USART can be useful if you don't want OTA or if you have bricked your OTA sketch, also you can use the whole flash size (1 MByte) whereas on OTA you are only able to use 512 KBytes. All the previous pre-requisite applies also for this case.
 
 ![](http://souliss.net/images/2015-09/ProgrammingConnector.png?raw=true)
 
