@@ -61,6 +61,9 @@ void setup()
 {   
     Initialize();
 
+	  analogWriteFreq(500);
+	  analogWriteRange(255);
+
     // Get the IP address from DHCP
     GetIPAddress();                          
     SetAsGateway(myvNet_dhcp);                  // Set this node as gateway for SoulissApp                        
@@ -92,11 +95,11 @@ void loop()
             Logic_DimmableLight(LEDWHITE2);
 
             // Use the output values to control the PWM
-            analogWrite(12, mOutput(LEDRED)*4);
-            analogWrite(13, mOutput(LEDGREEN)*4);
-            analogWrite(15, mOutput(LEDBLUE)*4);
-            analogWrite(14, mOutput(LEDWHITE1)*4);
-            analogWrite(4, mOutput(LEDWHITE2)*4);
+            analogWrite(15, mOutput(LEDRED);
+            analogWrite(13, mOutput(LEDGREEN);
+            analogWrite(12, mOutput(LEDBLUE);
+            analogWrite(14, mOutput(LEDWHITE1);
+            analogWrite(4, mOutput(LEDWHITE2));
 
             // Just process communication as fast as the logics
             ProcessCommunication();
