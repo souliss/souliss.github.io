@@ -7,7 +7,7 @@ excerpt: "Happy laziness, less tap on your smartphone screen with the Automate a
 author: plinio_seniore
 ads: false
 image:
-  feature: 2015-11/happy-laziness.png
+  feature: 2015-11/happy-laziness.jpg
   teaser: 2015-11/happy-laziness-teaser.png
 ---
 
