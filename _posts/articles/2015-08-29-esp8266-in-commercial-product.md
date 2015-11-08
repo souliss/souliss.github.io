@@ -2,7 +2,7 @@
 layout: article
 title: "The ESP8266 in Commercial Products!"
 categories: articles
-author: plinio_seniore
+author: marcolino7
 excerpt: "Andreas just found an ESP8266 in a cheap RGBWW LED Controller."
 tags: [arduino, esp8266, led strib, rgb led]
 modified: 2015-08-29
