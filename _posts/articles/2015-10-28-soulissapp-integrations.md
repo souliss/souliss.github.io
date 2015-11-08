@@ -10,6 +10,7 @@ ads: false
 image:
   feature: 2015-10/plugin.jpg
   teaser: 2015-10/plugin-teaser.jpg
+  credit: Automate
   creditlink: http://llamalab.com/automate/
 ---
 
