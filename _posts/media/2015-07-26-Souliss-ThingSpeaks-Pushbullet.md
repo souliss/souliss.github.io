@@ -78,15 +78,15 @@ Now we need to setup ThingSpeak Channel, ThingHTTP and React, but first you will
 
 Create New Channel in ThingSpeak, name it as you wish, in my case "PushbulletTriggerKamar". Make sure you have one field, use field 1 and name it as "Relay State"
 
-![tskamar](https://cloud.githubusercontent.com/assets/12625575/8894408/3aa2d5ac-33e0-11e5-817b-2a2f449b289c.PNG)
+![tskamar](http://souliss.net/images/2015-07/config1.PNG)
 
 Click APPS in ThingSpeak, and click ThingHTTP app, create new ThingHTTP, this will send http request to pushbullet if the Light ON, fill the field as the picture
 
-![ts2](https://cloud.githubusercontent.com/assets/12625575/8893826/d39051e2-33ca-11e5-9600-716a0502995a.PNG)
+![ts2](http://souliss.net/images/2015-07/config2.PNG)
 
 Create another ThingHTTP for the Light OFF, follow the picture below..
 
-![ts3](https://cloud.githubusercontent.com/assets/12625575/8894038/7bd7f5e2-33d2-11e5-8a86-7691a5e38469.PNG)
+![ts3](http://souliss.net/images/2015-07/config3.PNG)
 
 You can change the text body to fit your need, but it must be in json format.. I suggest just change this line
 
@@ -102,14 +102,14 @@ into something like this :
 
 Back to ThingSpeak APPS, now click React app, create new React, this will execute ThingHTTP is some condition meet.. we create a new React for Light ON
 
-![ts4](https://cloud.githubusercontent.com/assets/12625575/8893846/a40e9eaa-33cb-11e5-9e30-f60f7544a95d.PNG)
+![ts4](http://souliss.net/images/2015-07/config4.PNG)
 
 Last step, create another React for Light OFF
 
-![ts5](https://cloud.githubusercontent.com/assets/12625575/8893852/c9309792-33cb-11e5-8dae-3713ddfaa0d4.PNG)
+![ts5](http://souliss.net/images/2015-07/config5.PNG)
 
 You are done, now everytime you pressing ON OFF button in SoulissApp you should get notification in Pushbullet.
 
-![lastts](https://cloud.githubusercontent.com/assets/12625575/8894006/5a3d35ec-33d1-11e5-8a17-ba911328b059.PNG)
+![lastts](http://souliss.net/images/2015-07/Souliss-pushbullet.PNG)
 
 
