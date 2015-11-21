@@ -35,3 +35,5 @@ You'll use Internet connectivity only when strictly required, as example to cont
 ## Interact from your Smartphone and build Scenarios
 
 Controlling your devices from your *smartphone* is straightforward, using **SoulissApp** for Android you can directly access your Things without relying on a central server, but if you need it a server can be used to build scenarios and get a webhook to cloud services. This is done through **openHAB** an open-source automation server that offer cloud and webservices for your smart objects and home.
+
+<p class="post-excerpt" align="center"><img src="{{ site.url }}/images/userinterface800.png" alt="{{ site.title }}"></p> 
