@@ -234,7 +234,7 @@ void loop()
         UPDATESLOW();
         
         SLOW_10s() {
-            LYTStateRequest(LYTLIGHT1);     // Request the lamp state
+            LYTStateRequest();              // Request the lamp state
             LYTSleepTimer(LYTLIGHT1);       // Slowly shut down the lamp
         }
     }
