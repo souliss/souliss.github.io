@@ -10,7 +10,8 @@ ads: false
 image:
   feature: 2015-11/Automate-splash.png
   teaser: 2015-11/Automate-splash-teaser.jpg
-  credit: https://play.google.com/store/apps/details?id=com.llamalab.automate&hl=en
+  credit: Automate
+  creditlink: https://play.google.com/store/apps/details?id=com.llamalab.automate&hl=en
 ---
 
 After quite a lot of words on the integration of [SoulissApp with Automate and Tasker](http://souliss.net/articles/soulissapp-integrations/) through [intents and plugins](http://souliss.net/articles/happy-laziness-automate-tasker/), is now time to have a detailed look on how to get it working.
@@ -21,7 +22,7 @@ We focus on Tasker Plugin that is a set of open API supported from multiple Andr
 
 ![](http://souliss.net/images/2015-11/dialog-suggestion.jpg?raw=true)
 
-** Execute an Action or take Decision  **
+**Execute an Action or take Decision**
 
 ![](http://souliss.net/images/2015-11/AutomatePlugin.png?raw=true)
 
@@ -37,7 +38,7 @@ Check if the *Main Light* is on using the **Decision** one
 
 These two Plugin can be used in any Automate flow, even if this is not a full Automate tutorial, lets see how we can build simple conditional actions.
 
-** Recursively check for a condition with Forks **
+**Recursively check for a condition with Forks**
 
 Flows are easy to use but needs recursive check to be effective, the flow in the below picture checks for a time frame and later show a notification if the ambient light cross a threshold value.
 
@@ -57,7 +58,7 @@ Once connected, it starts a fork that will be a new flow starting from that poin
 
 This applies to any block as a time frame or else, **after the fork you can apply the same scheme** creating multiple condition in AND, like check for *WiFi and time frame*. 
 
-** Create Custom Interaction **
+**Create Custom Interaction**
 
 Even if the Plugin allow few commands like [*turn on, turn off and toggle*](https://github.com/souliss/souliss/wiki/SoulissApp-API) you can create custom and complex interaction with dedicated code on your node.
 
