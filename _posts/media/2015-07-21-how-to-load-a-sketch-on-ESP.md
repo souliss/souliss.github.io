@@ -59,10 +59,10 @@ Once the sketch has been loaded, you can run your module using the following set
 | CH_PD| PullUp |  |
 
 ### Minimal
-![ESP min](https://raw.githubusercontent.com/Links2004/Arduino/esp8266/docs/ESP_min.png)
+![ESP min](http://souliss.net/images/2015-07/ESP_min.png?raw=true)
 
 ### Improved Stability
-![ESP improved stability](https://raw.githubusercontent.com/Links2004/Arduino/esp8266/docs/ESP_improved_stability.png)
+![ESP improved stability](http://souliss.net/images/2015-07/ESP_improved_stability.png?raw=true)
 
 **Important Note**
 
