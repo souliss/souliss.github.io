@@ -228,5 +228,9 @@ void loop()
 
 The LYT8266 in our hands are actually prototypes that will be unvelived at Maker Faire Rome 2015 at the Authometion booth, there will be also a [workshop to have your hands on these devices](http://www.makerfairerome.eu/it/eventi/?ids=74). The sales will start after the faire, so a month or so before having them available on the market.
 
+**UPDATE**
+
+The LYT8266 is now on the Authometion store, have a look [here](http://authometion.com/shop/en/home/14-lyt8266-mounting-kit.html) is also available as [pre-assembled device](http://authometion.com/shop/en/home/13-lyt8266.html)
+
 Enjoy!
 
