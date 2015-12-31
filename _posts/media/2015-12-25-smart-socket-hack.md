@@ -1,13 +1,16 @@
 ---
 layout: article
-title: "Sample Post Style Guide"
-categories: articles
-modified: 2014-08-27T11:57:41-04:00
-tags: [sample]
-{% include toc.html %}
+title: "Smart Socket Hack Tutorial"
+categories: media
+excerpt: "Give smartness to a commercial remote controlled socket."
+ads: false
+share: true
+author: robin
+image:
+  feature: 2015-12/MAINIMAGE.jpg
+  teaser: 2015-12/TEASER.jpg
 ---
 
-## Smart Socket Hack Tutorial
 
 These 2200W wifi controlled Smart Sockets are available from suppliers on Ebay for about £15 - they are available with various Mains input plug formats (Europe, UK, US), they have multi-standard Mains output sockets, onboard USB charging socket, onboard configuration push button, and 2 onboard LEDs (green and blue). 
 
