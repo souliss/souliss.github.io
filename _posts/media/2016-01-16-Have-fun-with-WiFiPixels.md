@@ -29,14 +29,14 @@ Assuming that you know how to use the [Arduino IDE and the ESP8266](http://souli
     Souliss - WiFi Pixels
 
     Control a WiFi Pixels board from Android or openHAB, it network the node
-	so that you can control the light effect also from other Souliss nodes
-	using peer to peer send or listening for broadcasted/multicasted topics.
+    so that you can control the light effect also from other Souliss nodes
+    using peer to peer send or listening for broadcasted/multicasted topics.
 
-	Need Adafruit NeoPixel library.
+    Need Adafruit NeoPixel library.
 
     Run this code on one of the following boards:
       - Protoneer WiFi Pixels
-	  - An ESP8266 with WS2812 LEDs
+      - An ESP8266 with WS2812 LEDs
 
 ***************************************************************************/
 
@@ -58,31 +58,31 @@ Assuming that you know how to use the [Arduino IDE and the ESP8266](http://souli
 #include <Adafruit_NeoPixel.h>
 
 // WiFi Pixels pin
-#define WS2812_PIN 		  2
-#define	WS2812_PIXELS	  16
+#define WS2812_PIN        2
+#define WS2812_PIXELS     16
 
 // Souliss logic (aka typical) slots
 #define LEDCONTROL        0
 #define LEDRED            1
 #define LEDGREEN          2
 #define LEDBLUE           3
-#define	ALLTHESAME		  4
-#define COLORWIPE		  5
-#define THEATERCHASE	  6
+#define ALLTHESAME        4
+#define COLORWIPE         5
+#define THEATERCHASE      6
 
 /*** 
-	Color Effect Mode:
+    Color Effect Mode:
 
-		4 - All The Same
-		5 - Color Wipe
-		6 - Theater Chase
+        4 - All The Same
+        5 - Color Wipe
+        6 - Theater Chase
 ***/
 uint8_t coloreffect=ALLTHESAME;
 
 // Index of the addressed pixel
-uint8_t i_coloreffect=0;	
+uint8_t i_coloreffect=0;    
 unsigned long timedelay=millis();
-#define	TIME_DELAY			 50 	// Not stopping delay in milliseconds
+#define TIME_DELAY           50     // Not stopping delay in milliseconds
 
 // Init the LED object, refer to Adafruit NeoPixel library for more details
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(WS2812_PIXELS, WS2812_PIN, NEO_GRB + NEO_KHZ800);
@@ -95,17 +95,17 @@ void setup()
     GetIPAddress();                          
     SetAsGateway(myvNet_dhcp);                  // Set this node as gateway for SoulissApp                        
 
-    Set_T16(LEDCONTROL);                  		// Set a logic to control a LED strip
-	Set_T11(ALLTHESAME);						// Set a button for the All The Same effect
-    Set_T11(COLORWIPE);							// Set a button for the Color Wipe effect
-	Set_T11(THEATERCHASE);						// Set a button for the Theater Chase effect
+    Set_T16(LEDCONTROL);                        // Set a logic to control a LED strip
+    Set_T11(ALLTHESAME);                        // Set a button for the All The Same effect
+    Set_T11(COLORWIPE);                         // Set a button for the Color Wipe effect
+    Set_T11(THEATERCHASE);                      // Set a button for the Theater Chase effect
 
-	// Init the pixels
-	strip.begin();
-	strip.show(); 
+    // Init the pixels
+    strip.begin();
+    strip.show(); 
 
-	// Init the All The Same mode as default
-	mOutput(ALLTHESAME) = 1;
+    // Init the All The Same mode as default
+    mOutput(ALLTHESAME) = 1;
 }
 
 void loop()
@@ -119,7 +119,7 @@ void loop()
 
             // Execute the logic that handle the LED
             if(Logic_T16(LEDCONTROL)) timedelay=millis();
-			setColor();
+            setColor();
 
             // Just process communication as fast as the logics
             ProcessCommunication();
@@ -127,33 +127,33 @@ void loop()
 
         // Execute the code every 110 milliseconds  
         FAST_110ms() {
-			
-			// Select the effect mode
-			if(Logic_T11(ALLTHESAME)) {
-				coloreffect = ALLTHESAME;
+            
+            // Select the effect mode
+            if(Logic_T11(ALLTHESAME)) {
+                coloreffect = ALLTHESAME;
 
-				// Reset the other color mode
-				mOutput(COLORWIPE) = 0;
-				mOutput(THEATERCHASE) = 0;
-			}
+                // Reset the other color mode
+                mOutput(COLORWIPE) = 0;
+                mOutput(THEATERCHASE) = 0;
+            }
 
-			if(Logic_T11(COLORWIPE)) {
-				coloreffect = COLORWIPE;
+            if(Logic_T11(COLORWIPE)) {
+                coloreffect = COLORWIPE;
 
-				// Reset the other color mode
-				mOutput(ALLTHESAME) = 0;
-				mOutput(THEATERCHASE) = 0;
-			}
+                // Reset the other color mode
+                mOutput(ALLTHESAME) = 0;
+                mOutput(THEATERCHASE) = 0;
+            }
 
-			if(Logic_T11(THEATERCHASE)) {
-				coloreffect = THEATERCHASE;
+            if(Logic_T11(THEATERCHASE)) {
+                coloreffect = THEATERCHASE;
 
-				// Reset the other color mode
-				mOutput(COLORWIPE) = 0;
-				mOutput(ALLTHESAME) = 0;
-			}
+                // Reset the other color mode
+                mOutput(COLORWIPE) = 0;
+                mOutput(ALLTHESAME) = 0;
+            }
 
-		}
+        }
 
         // Process the other Gateway stuffs
         FAST_GatewayComms();
@@ -173,51 +173,51 @@ void loop()
 
 // Set the selected color and effect
 void setColor() {
-	
-	if(coloreffect==COLORWIPE)			colorWipe();
-	else if(coloreffect==THEATERCHASE)	theaterChase();
-	else 								alltheSame();
+    
+    if(coloreffect==COLORWIPE)          colorWipe();
+    else if(coloreffect==THEATERCHASE)  theaterChase();
+    else                                alltheSame();
 
     strip.show();
 }
 
 // Set the same color for all pixels
 void alltheSame() {
-	uint32_t c = strip.Color(mOutput(LEDRED), mOutput(LEDGREEN), mOutput(LEDBLUE));
+    uint32_t c = strip.Color(mOutput(LEDRED), mOutput(LEDGREEN), mOutput(LEDBLUE));
 
-	for(i_coloreffect=0;i_coloreffect<strip.numPixels();i_coloreffect++)
-		strip.setPixelColor(i_coloreffect, c);
+    for(i_coloreffect=0;i_coloreffect<strip.numPixels();i_coloreffect++)
+        strip.setPixelColor(i_coloreffect, c);
 }
 
 // Set the current color one pixel per time
 void colorWipe() {
 
-	// Update periodically
-	if((long)(millis()-timedelay)>0) {
+    // Update periodically
+    if((long)(millis()-timedelay)>0) {
 
-		uint32_t c = strip.Color(mOutput(LEDRED), mOutput(LEDGREEN), mOutput(LEDBLUE));
+        uint32_t c = strip.Color(mOutput(LEDRED), mOutput(LEDGREEN), mOutput(LEDBLUE));
 
-		strip.setPixelColor(i_coloreffect, c);
-		i_coloreffect = (i_coloreffect+1) % strip.numPixels();
-		
-		timedelay = millis() + TIME_DELAY;
-	}
+        strip.setPixelColor(i_coloreffect, c);
+        i_coloreffect = (i_coloreffect+1) % strip.numPixels();
+        
+        timedelay = millis() + TIME_DELAY;
+    }
 }
 
 // Turn the third pixel and shut the previous
 void theaterChase() {
 
-	// Update periodically
-	if((long)(millis()-timedelay)>0) {
+    // Update periodically
+    if((long)(millis()-timedelay)>0) {
 
-		uint32_t c = strip.Color(mOutput(LEDRED), mOutput(LEDGREEN), mOutput(LEDBLUE));
+        uint32_t c = strip.Color(mOutput(LEDRED), mOutput(LEDGREEN), mOutput(LEDBLUE));
 
-		strip.setPixelColor(i_coloreffect, c);
-		strip.setPixelColor(i_coloreffect+2, 0);
-		i_coloreffect = (i_coloreffect+3) % strip.numPixels();
+        strip.setPixelColor(i_coloreffect, c);
+        strip.setPixelColor(i_coloreffect+2, 0);
+        i_coloreffect = (i_coloreffect+3) % strip.numPixels();
 
-		timedelay = millis() + TIME_DELAY;
-	}
+        timedelay = millis() + TIME_DELAY;
+    }
 }
 {% endhighlight %}
 
