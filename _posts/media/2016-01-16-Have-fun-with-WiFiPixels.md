@@ -18,125 +18,206 @@ Far from the Australia the WiFi Pixel has arrived in my mailbox, this is a combi
 
 > The WS2812 combine three LED (Red, Green and Blue) and a small circuit that acts as a shift register 24 bit memory. So you can use a proper waveform to have it store a color as input and as any shift register it output the previous value, the result it that a single pin can drive an array of LED with the length as you want.
 
-![https://learn.adafruit.com/assets/10668](http://souliss.net/images/2016-01/leds_neo-closeup.jpg?raw=true)
+The below image by [Adafruit](https://learn.adafruit.com/assets/10668) shows the internal view of the addressable LED
+
+![](http://souliss.net/images/2016-01/leds_neo-closeup.jpg?raw=true)
 
 Assuming that you know how to use the [Arduino IDE and the ESP8266](http://souliss.net/media/how-to-load-a-sketch-on-ESP/), you just have to download the [Adafruit NeoPixel library](https://github.com/plinioseniore/Adafruit_NeoPixel) and have the latest Souliss release (v7.1.1 at time of writing) to run the following sketch
 
 {% highlight c %}
-#define PIN 2
+/**************************************************************************
+    Souliss - WiFi Pixels
 
-// Parameter 1 = number of pixels in strip
-// Parameter 2 = Arduino pin number (most are valid)
-// Parameter 3 = pixel type flags, add together as needed:
-//   NEO_KHZ800  800 KHz bitstream (most NeoPixel products w/WS2812 LEDs)
-//   NEO_KHZ400  400 KHz (classic 'v1' (not v2) FLORA pixels, WS2811 drivers)
-//   NEO_GRB     Pixels are wired for GRB bitstream (most NeoPixel products)
-//   NEO_RGB     Pixels are wired for RGB bitstream (v1 FLORA pixels, not v2)
-Adafruit_NeoPixel strip = Adafruit_NeoPixel(16, PIN, NEO_GRB + NEO_KHZ800);
+    Control a WiFi Pixels board from Android or openHAB, it network the node
+	so that you can control the light effect also from other Souliss nodes
+	using peer to peer send or listening for broadcasted/multicasted topics.
 
-void setup() {
-  strip.begin();
-  strip.show(); // Initialize all pixels to 'off'
+	Need Adafruit NeoPixel library.
+
+    Run this code on one of the following boards:
+      - Protoneer WiFi Pixels
+	  - An ESP8266 with WS2812 LEDs
+
+***************************************************************************/
+
+// Configure the framework
+#include "bconf/MCU_ESP8266.h"              // Load the code directly on the ESP8266
+#include "conf/Gateway.h"                   // The main node is the Gateway, we have just one node
+
+// **** Define the WiFi name and password ****
+#define WIFICONF_INSKETCH
+#define WiFi_SSID               "mywifi"
+#define WiFi_Password           "mypassword"    
+
+// Include framework code and libraries
+#include <ESP8266WiFi.h>
+#include <EEPROM.h>
+#include "Souliss.h"
+
+// Dependency
+#include <Adafruit_NeoPixel.h>
+
+// WiFi Pixels pin
+#define WS2812_PIN 		  2
+#define	WS2812_PIXELS	  16
+
+// Souliss logic (aka typical) slots
+#define LEDCONTROL        0
+#define LEDRED            1
+#define LEDGREEN          2
+#define LEDBLUE           3
+#define	ALLTHESAME		  4
+#define COLORWIPE		  5
+#define THEATERCHASE	  6
+
+/*** 
+	Color Effect Mode:
+
+		4 - All The Same
+		5 - Color Wipe
+		6 - Theater Chase
+***/
+uint8_t coloreffect=ALLTHESAME;
+
+// Index of the addressed pixel
+uint8_t i_coloreffect=0;	
+unsigned long timedelay=millis();
+#define	TIME_DELAY			 50 	// Not stopping delay in milliseconds
+
+// Init the LED object, refer to Adafruit NeoPixel library for more details
+Adafruit_NeoPixel strip = Adafruit_NeoPixel(WS2812_PIXELS, WS2812_PIN, NEO_GRB + NEO_KHZ800);
+
+void setup()
+{   
+    Initialize();
+
+    // Get the IP address from DHCP
+    GetIPAddress();                          
+    SetAsGateway(myvNet_dhcp);                  // Set this node as gateway for SoulissApp                        
+
+    Set_T16(LEDCONTROL);                  		// Set a logic to control a LED strip
+	Set_T11(ALLTHESAME);						// Set a button for the All The Same effect
+    Set_T11(COLORWIPE);							// Set a button for the Color Wipe effect
+	Set_T11(THEATERCHASE);						// Set a button for the Theater Chase effect
+
+	// Init the pixels
+	strip.begin();
+	strip.show(); 
+
+	// Init the All The Same mode as default
+	mOutput(ALLTHESAME) = 1;
 }
 
-void loop() {
-  // Some example procedures showing how to display to the pixels:
-  colorWipe(strip.Color(255, 0, 0), 50); // Red
-  colorWipe(strip.Color(0, 255, 0), 50); // Green
-  colorWipe(strip.Color(0, 0, 255), 50); // Blue
-  // Send a theater pixel chase in...
-  theaterChase(strip.Color(127, 127, 127), 50); // White
-  theaterChase(strip.Color(127, 0, 0), 50); // Red
-  theaterChase(strip.Color(0, 0, 127), 50); // Blue
+void loop()
+{ 
+    // Here we start to play
+    EXECUTEFAST() {                     
+        UPDATEFAST();   
 
-  rainbow(20);
-  rainbowCycle(20);
-  theaterChaseRainbow(50);
+        // Execute the code every 10 milliseconds   
+        FAST_10ms() {
+
+            // Execute the logic that handle the LED
+            if(Logic_T16(LEDCONTROL)) timedelay=millis();
+			setColor();
+
+            // Just process communication as fast as the logics
+            ProcessCommunication();
+        } 
+
+        // Execute the code every 110 milliseconds  
+        FAST_110ms() {
+			
+			// Select the effect mode
+			if(Logic_T11(ALLTHESAME)) {
+				coloreffect = ALLTHESAME;
+
+				// Reset the other color mode
+				mOutput(COLORWIPE) = 0;
+				mOutput(THEATERCHASE) = 0;
+			}
+
+			if(Logic_T11(COLORWIPE)) {
+				coloreffect = COLORWIPE;
+
+				// Reset the other color mode
+				mOutput(ALLTHESAME) = 0;
+				mOutput(THEATERCHASE) = 0;
+			}
+
+			if(Logic_T11(THEATERCHASE)) {
+				coloreffect = THEATERCHASE;
+
+				// Reset the other color mode
+				mOutput(COLORWIPE) = 0;
+				mOutput(ALLTHESAME) = 0;
+			}
+
+		}
+
+        // Process the other Gateway stuffs
+        FAST_GatewayComms();
+
+    }
+    EXECUTESLOW()
+    {   
+        UPDATESLOW();
+
+        SLOW_10s()  {
+
+            // The timer handle timed-on states
+            Timer_LED_Strip(LEDCONTROL);                      
+        }     
+    }       
 }
 
-// Fill the dots one after the other with a color
-void colorWipe(uint32_t c, uint8_t wait) {
-  for(uint16_t i=0; i<strip.numPixels(); i++) {
-    strip.setPixelColor(i, c);
+// Set the selected color and effect
+void setColor() {
+	
+	if(coloreffect==COLORWIPE)			colorWipe();
+	else if(coloreffect==THEATERCHASE)	theaterChase();
+	else 								alltheSame();
+
     strip.show();
-    delay(wait);
-  }
 }
 
-void rainbow(uint8_t wait) {
-  uint16_t i, j;
+// Set the same color for all pixels
+void alltheSame() {
+	uint32_t c = strip.Color(mOutput(LEDRED), mOutput(LEDGREEN), mOutput(LEDBLUE));
 
-  for(j=0; j<256; j++) {
-    for(i=0; i<strip.numPixels(); i++) {
-      strip.setPixelColor(i, Wheel((i+j) & 255));
-    }
-    strip.show();
-    delay(wait);
-  }
+	for(i_coloreffect=0;i_coloreffect<strip.numPixels();i_coloreffect++)
+		strip.setPixelColor(i_coloreffect, c);
 }
 
-// Slightly different, this makes the rainbow equally distributed throughout
-void rainbowCycle(uint8_t wait) {
-  uint16_t i, j;
+// Set the current color one pixel per time
+void colorWipe() {
 
-  for(j=0; j<256*5; j++) { // 5 cycles of all colors on wheel
-    for(i=0; i< strip.numPixels(); i++) {
-      strip.setPixelColor(i, Wheel(((i * 256 / strip.numPixels()) + j) & 255));
-    }
-    strip.show();
-    delay(wait);
-  }
+	// Update periodically
+	if((long)(millis()-timedelay)>0) {
+
+		uint32_t c = strip.Color(mOutput(LEDRED), mOutput(LEDGREEN), mOutput(LEDBLUE));
+
+		strip.setPixelColor(i_coloreffect, c);
+		i_coloreffect = (i_coloreffect+1) % strip.numPixels();
+		
+		timedelay = millis() + TIME_DELAY;
+	}
 }
 
-//Theatre-style crawling lights.
-void theaterChase(uint32_t c, uint8_t wait) {
-  for (int j=0; j<10; j++) {  //do 10 cycles of chasing
-    for (int q=0; q < 3; q++) {
-      for (int i=0; i < strip.numPixels(); i=i+3) {
-        strip.setPixelColor(i+q, c);    //turn every third pixel on
-      }
-      strip.show();
+// Turn the third pixel and shut the previous
+void theaterChase() {
 
-      delay(wait);
+	// Update periodically
+	if((long)(millis()-timedelay)>0) {
 
-      for (int i=0; i < strip.numPixels(); i=i+3) {
-        strip.setPixelColor(i+q, 0);        //turn every third pixel off
-      }
-    }
-  }
-}
+		uint32_t c = strip.Color(mOutput(LEDRED), mOutput(LEDGREEN), mOutput(LEDBLUE));
 
-//Theatre-style crawling lights with rainbow effect
-void theaterChaseRainbow(uint8_t wait) {
-  for (int j=0; j < 256; j++) {     // cycle all 256 colors in the wheel
-    for (int q=0; q < 3; q++) {
-      for (int i=0; i < strip.numPixels(); i=i+3) {
-        strip.setPixelColor(i+q, Wheel( (i+j) % 255));    //turn every third pixel on
-      }
-      strip.show();
+		strip.setPixelColor(i_coloreffect, c);
+		strip.setPixelColor(i_coloreffect+2, 0);
+		i_coloreffect = (i_coloreffect+3) % strip.numPixels();
 
-      delay(wait);
-
-      for (int i=0; i < strip.numPixels(); i=i+3) {
-        strip.setPixelColor(i+q, 0);        //turn every third pixel off
-      }
-    }
-  }
-}
-
-// Input a value 0 to 255 to get a color value.
-// The colours are a transition r - g - b - back to r.
-uint32_t Wheel(byte WheelPos) {
-  WheelPos = 255 - WheelPos;
-  if(WheelPos < 85) {
-    return strip.Color(255 - WheelPos * 3, 0, WheelPos * 3);
-  }
-  if(WheelPos < 170) {
-    WheelPos -= 85;
-    return strip.Color(0, WheelPos * 3, 255 - WheelPos * 3);
-  }
-  WheelPos -= 170;
-  return strip.Color(WheelPos * 3, 255 - WheelPos * 3, 0);
+		timedelay = millis() + TIME_DELAY;
+	}
 }
 {% endhighlight %}
 
