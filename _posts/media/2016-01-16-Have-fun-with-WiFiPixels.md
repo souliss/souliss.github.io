@@ -14,7 +14,7 @@ image:
   creditlink: http://blog.protoneer.co.nz/
 ---
 
-Far from the Australia the WiFi Pixel has arrived in my mailbox, this is a combination of a NeoPixel Ring and an ESP8266 WiFi SoC that gives the awesome effects of 16 WS2812 addressable LEDs.
+Far from the New Zeland the WiFi Pixel has arrived in my mailbox, this is a combination of a NeoPixel Ring and an ESP8266 WiFi SoC that gives the awesome effects of 16 WS2812 addressable LEDs.
 
 > The WS2812 combine three LED (Red, Green and Blue) and a small circuit that acts as a shift register 24 bit memory. So you can use a proper waveform to have it store a color as input and as any shift register it output the previous value, the result it that a single pin can drive an array of LED with the length as you want.
 
