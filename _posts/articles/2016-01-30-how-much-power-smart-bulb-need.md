@@ -49,7 +49,7 @@ So, Scott has posted [new measures and math](https://plus.google.com/+greatscott
 
 **ESTIMATE THE POWER FOR A NOT SINE-WAVE CURRENT**
 
-There are multiple way to proceed but here we follow the short path, computer does the math for us and we can just apply the power formula, multiply voltage and current in a time constrained integral. Nowadays is easy, you just need to export the values from the oscilloscope and use a great tool like [Scilab](http://www.scilab.org/), but Scott didn't exported the values.
+There are multiple way to proceed but here we follow the short path, computer does the math for us and we can just apply the power formula, multiply voltage and power in a time constrained integral. Nowadays is easy, you just need to export the values from the oscilloscope and use a great tool like [Scilab](http://www.scilab.org/), but Scott didn't exported the values.
 
 So an estimation can be made calculating the normalized power of a voltage and current waveforms that are near to the one in the oscilloscope, here the [code](https://github.com/plinioseniore/lyt-current-estimation/tree/master)
 
@@ -74,9 +74,11 @@ The scaling factor of the current can be calculated as the RMS of the normalized
 
 ![](http://souliss.net/images/2016-01/current-rms.png?raw=true)
 
-So, using the scaling factor we can get the peak values and applying the normalized power value we get the estimation of the power consumption as 11 W, that's an estimation because the wave form was just a raw shape from a picture and not an export from an oscilloscope. 
+So, using the scaling factor we can get the peak values and applying the normalized power value we get the estimation of the power consumption as 10 W, that's an estimation because the wave form was just a raw shape from a picture and not an export from an oscilloscope. 
 
-These 11 W are a most reliable estimation and shows the proper way to follow, at the end the **long story short** is the way to proceed, using a watt-meter that shows 8.7 W used on the AC side.
+![](http://souliss.net/images/2016-01/Power-math.png?raw=true)
+
+These 10 W are a most reliable estimation and shows the proper way to follow, at the end the **long story short** is the way to proceed, using a watt-meter that shows 8.7 W used on the AC side.
 
 ![](http://souliss.net/images/2016-01/Measures.png?raw=true)
 
