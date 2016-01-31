@@ -49,7 +49,7 @@ So, Scott has posted [new measures and math](https://plus.google.com/+greatscott
 
 **ESTIMATE THE POWER FOR A NOT SINE-WAVE CURRENT**
 
-There are multiple way to proceed but here we follow the short path, computer does the math for us and we can just apply the power formula, multiply voltage and power in a time constrained integral. Nowadays is easy, you just need to export the values from the oscilloscope and use a great tool like [Scilab](http://www.scilab.org/), but Scott didn't exported the values.
+There are multiple way to proceed but here we follow the short path, computer does the math for us and we can just apply the power formula, multiply voltage and current in a time constrained integral. Nowadays is easy, you just need to export the values from the oscilloscope and use a great tool like [Scilab](http://www.scilab.org/), but Scott didn't exported the values.
 
 So an estimation can be made calculating the normalized power of a voltage and current waveforms that are near to the one in the oscilloscope, here the [code](https://github.com/plinioseniore/lyt-current-estimation/tree/master)
 
