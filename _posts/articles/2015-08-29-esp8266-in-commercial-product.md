@@ -91,8 +91,8 @@ void loop()
                     
             // Execute the logic that handle the LED
             Logic_LED_Strip(LEDCONTROL);
-            Logic_DimmableLight(LEDWHITE1);
-            Logic_DimmableLight(LEDWHITE2);
+            Logic_DimmableLight(LEDSTRIP1);
+            Logic_DimmableLight(LEDSTRIP2);
 
             // Use the output values to control the PWM
             analogWrite(15, mOutput(LEDRED);
@@ -117,8 +117,8 @@ void loop()
         
             // The timer handle timed-on states
             Timer_LED_Strip(LEDCONTROL); 
-            Timer_DimmableLight(LEDWHITE1);
-            Timer_DimmableLight(LEDWHITE2);                       
+            Timer_DimmableLight(LEDSTRIP1);
+            Timer_DimmableLight(LEDSTRIP2);                       
         }     
     }       
 } 
