@@ -3,12 +3,14 @@
 layout: article
 title: "Using Eclipse Arduino IDE with Souliss"
 categories: media
+excerpt: "This is tutorial how to setup Eclipse Arduino IDE to compile sketches using Souliss."
 ads: false
 share: true
-author: dgolda
+author: Damian Gołda
 ---
 
 This is tutorial how to setup Eclipse Arduino IDE to compile sketches using Souliss.
+
 I assume you use Windows (Windows 7 64-bit in my case) - for other operating systems there are minor differences.
 
 ## Download and install
