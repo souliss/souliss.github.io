@@ -84,6 +84,12 @@ These 10 W are a most reliable estimation and shows the proper way to follow, at
 
 Back to the efficiency, the measure on the DC side at full bright are free from PWM and are supposed to be mostly constants because the microcontroller power consumption (that is clock driven) is negligible compared to the LED ones at full bright. So the 7.05 W on the DC side can be considered a good measure and compared to 8.7 W on the AC side gives a good 81% of efficiency.
 
-If you are reading this line, you liked the long story!
+**UPDATES**
+
+[Gabriele](https://github.com/orgs/souliss/people/ribico) has a professional meter and after reading the post has done some measures on the bulb. I've got the export from his scope and applied the integral into a period of time to get the average power on AC and DC side, with a 82% efficency as result in the case of 2.5 W consumption on the AC side.
+
+![](http://souliss.net/images/2016-01/Measured-AC-power.png?raw=true)
+
+The measures as well as the Scilab code to get the plots are available [here](https://github.com/plinioseniore/reactive_power).
 
 Enjoy! 
