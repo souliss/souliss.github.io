@@ -1,5 +1,15 @@
 # Authors
 
+team:
+  name: Souliss Team
+  web: https://github.com/souliss
+  email: info@souliss.net
+  bio: "Open-source SmartHome at your fingertip! "
+  avatar: logo160.png
+  twitter: soulissteam
+  google:
+    plus:
+
 plinio_seniore:
   name: Dario
   web: https://github.com/plinioseniore
