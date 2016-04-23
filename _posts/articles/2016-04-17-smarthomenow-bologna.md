@@ -42,3 +42,5 @@ La presenza di un piccolo Laboratorio mobile ha poi permesso ai partecipanti di 
 Il risultato è stato interessante e l'impegno è quello di partecipare ad altre tappe tra cui Milano e Roma, dove probabilmente verrà replicato l'esperimento del laboratorio mobile per mostrare direttamente ai partecipanti come utilizzare Souliss.
 
 ![](http://souliss.net/images/2016-04/Nostromo_Pex.jpg)
+
+Registrate la vostra presenza (l'ingresso è gratuito, ma la registrazione è obbligatoria) per le prossime tappe sul sito di [SmartHome Now](http://smarthomenow.it/), ci vediamo al prossimo evento!
