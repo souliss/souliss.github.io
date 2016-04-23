@@ -23,16 +23,22 @@ La prima tappa di Torino è stata una sperimentazione e la principale ingonita e
 
 Le slide principali sono riportate sotto come immagine, ma il file completo è [disponibile](http://souliss.net/images/2016-04/Souliss_SmartHomeNow_v0.pdf).
 
-|Integrazione con openHAB|
+|**Integrazione con openHAB**|
 |---|
 |![](http://souliss.net/images/2016-04/slide1.jpg)|
-|Monitoraggio distribuito riscaldamento|
+|**Monitoraggio distribuito riscaldamento**|
 |![](http://souliss.net/images/2016-04/slide2.jpg)|
-|Consumi elettrici|
+|**Consumi elettrici**|
 |![](http://souliss.net/images/2016-04/slide4.jpg)|
 
-Dall'esperienza positiva di Torino è nato l'invito per partecipare anche a Bologna, dove [Alessandro](https://github.com/shineangelic) ha introdotto con un taglio diverso la storia ed i motivi per cui è nato Souliss. La presenza di un piccolo Laboratorio mobile ha poi permesso ai partecipanti di vedere qualche esempio da vivo, toccando con mano il lavoro delle notti insonni di [Flavio](https://github.com/mcbittech) ed [Antonino](https://github.com/fazioa) con la loro idea di riuscire ad emulare NEST in open-source con [SST](https://github.com/souliss/smart-thermostat).
+Dall'esperienza positiva di Torino è nato l'invito per partecipare anche a Bologna, dove [Alessandro](https://github.com/shineangelic) ha introdotto con un taglio diverso la storia ed i motivi per cui è nato Souliss. 
+
+![](http://souliss.net/images/2016-04/Pexoratore.jpg)
+
+La presenza di un piccolo Laboratorio mobile ha poi permesso ai partecipanti di vedere qualche esempio da vivo, toccando con mano il lavoro delle notti insonni di [Flavio](https://github.com/mcbittech) ed [Antonino](https://github.com/fazioa) con la loro idea di riuscire ad emulare NEST in open-source con [SST](https://github.com/souliss/smart-thermostat).
 
 ![](http://souliss.net/images/2016-04/slide3.jpg)
 
-Il risultato è stato interessante e l'impegno è quello di partecipare ad altre tappe tra cui Milano e Roma.
+Il risultato è stato interessante e l'impegno è quello di partecipare ad altre tappe tra cui Milano e Roma, dove probabilmente verrà replicato l'esperimento del laboratorio mobile per mostrare direttamente ai partecipanti come utilizzare Souliss.
+
+![](http://souliss.net/images/2016-04/Nostromo_Pex.jpg)
