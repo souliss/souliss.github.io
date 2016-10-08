@@ -117,7 +117,8 @@ At this point the module is in **Bootloader Mode** and you can load the code fro
 
 The Arduino IDE allow an easy add-on of cores that has been developed by the community, this allow you reuse Arduino-like codes and libraries on non official boards. Perform the following steps to add the ESP8266 cores:
 
-* Install the latest Souliss' supported Arduino IDE and have a general read of the [Getting Started guide](https://github.com/souliss/souliss/wiki/Getting%20Started%20with%20Souliss).
+* Install the latest Souliss' supported Arduino IDE and have a general read of the [Getting Started guide](https://github.com/souliss/souliss/wiki/Getting%20Started%20with%20Souliss)
+* Create a folder called **portable** inside the IDE main folder
 * Start Arduino and open Preferences window.
 * Refer to the latest supported core for Souliss in the [wiki](https://github.com/souliss/souliss/wiki/Supported%20Hardware#supported-cores)
 * Follow the installation instruction [ESP8266 cores for Arduino](https://github.com/esp8266/Arduino), the cores are distributed via the Arduino IDE Board Manager and needs an URL for the distribution of the code. You can check the supported core [here](https://github.com/souliss/souliss/wiki/Supported%20Hardware#supported-cores)
