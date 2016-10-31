@@ -267,24 +267,4 @@ void loop()
 } 
 {% endhighlight %}
 
-## Hardware Bugs
-
-**Receiving RS485 Data**
-
-The DINo WiFi version 1 has some *minor* hardware bugs that can be solved easily.
-
-To receive data on the RS485 interface an external jumper between the UEXT and the USART headers is required, this because the *U6* device (see below picture) hasn't a pull-up, so you need to force *FT_TXD* (pin 4 on the USART header) to HIGH (3.3VDC) so that *RS485_RX* data will go to the USART interface of the ESP8266.
-
-![](http://souliss.net/images/2016-10/dino_rs485.png?raw=true) 
-
-The connection between the UEXT and USART headers is shown in blue in the below picture
-
-![](http://souliss.net/images/2016-10/dino_wifi_3.jpg?raw=true)
-
-**Opto-isolated inputs**
-
-The opto-isolated inputs accept from 3VDC to 30VDC, the polarity shown in the label is wrong and need a reverse. On the terminal strip the first pin is the (+) and is followed by the (-) rather the label shows the opposite.
-
-![](http://souliss.net/images/2016-10/dino_wifi_4.jpg?raw=true)
-
 **Enjoy!**
