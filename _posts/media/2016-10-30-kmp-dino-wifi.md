@@ -37,11 +37,7 @@ Near the header used to connect the USB to USART converter there is a jumper and
 
 **Setup the Arduino IDE**
 
-There is no special need for modified cores, but anyhow KMP Electronics is providing dedicated cores for the board. This are based on the official ESP8266 cores, with minor modification. Insert the below link in the *Preferences* of the IDE and then download the cores.
-
-> https://raw.githubusercontent.com/kmpelectronics/Arduino/master/ProDinoEsp8266/package_prodino-esp8266_index.json
-
-Using the KMP Electronics cores will likely result in the use of older code, so if you are using features from the latest cores, just program this board as any other ESP8266 using the following settings:
+Just program this board as any other ESP8266 using the following settings:
 
 - Flash Mode: QIO
 - Flash Frequency : 40 MHz
