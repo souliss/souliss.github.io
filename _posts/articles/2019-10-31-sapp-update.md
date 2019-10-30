@@ -2,10 +2,10 @@
 layout: article
 title: "SoulissApp Android 10 update"
 categories: articles
-author: Alessandro
+author: shine_angelic
 excerpt: "SoulissApp updated to Android Q"
 tags: [soulissapp, android]
-modified: 2019-10-31
+modified: 2019-10-30
 ads: false  
 image:
   feature: 2019-10/Screenshot_home.png
@@ -13,7 +13,7 @@ image:
   creditlink: https://github.com/souliss/soulissapp/releases/tag/2.3.2
 ---
 
-Updating soulissApp is both a pleasure and a pain. Proud of mantaining a 7 years old app, born under Android 2 _Gingerbread_ environment, it still takes some old legacy dependancy with it. Hard to update and/or mantain, especially because of the earthquaking environment. But it still works, I "just" had to redo backgroud services and remove much legacy code. This new version is compiled **targeting sdk 29**, aka Q, Android 10, but the biggest changes came adapting to previous Android's major release.
+Updating soulissApp is both a pleasure and a pain. Proud of mantaining a 7 years old app, born under Android 2 _Gingerbread_ environment, it still takes some old legacy dependancy with it and several spiderwebs. Hard to update and/or mantain, especially because of the earthquaking environment. But it still works, I "just" had to redo backgroud services and remove much legacy code. This new version is compiled **targeting sdk 29**, aka Q, Android 10, but the biggest changes came adapting to previous Android's major release.
 
 ![New permissions request modal](http://souliss.net/images/2019-10/Screenshot_permission.png)
 ![new settings screen](http://souliss.net/images/2019-10/Screenshot_settings.png)
