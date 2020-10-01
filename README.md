@@ -9,6 +9,8 @@ You can contribute directly from the GitHub website or using any other Git tool.
 
 The following instruction show you how contribute directly from your browser, if you have confidence with Git tools you can contribute using your own tools.
 
+Anybody can contribute to this repository if you have above qualities and if you don't then go and learn, update yourself. # There is no age of learning.
+
 As first step you should fork the repository, this will create a your own copy that you are free to modifiy.
 
 ![](https://github.com/souliss/wiki-images/raw/master/gitguide/1_forkrepo.gif)
