@@ -25,7 +25,7 @@ gems:
 owner:
   name: Souliss Team
   web: http://souliss.github.io
-  email: -
+  email:
   twitter: soulissteam
   bio: "Open source, smart home and IoT framework for Arduino and Android"
   avatar: logo160.png # 160x160 px image for author byline
@@ -38,7 +38,7 @@ owner:
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email: -
+  email:
   facebook:
   flickr:
   github: souliss
