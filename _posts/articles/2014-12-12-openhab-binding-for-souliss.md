@@ -18,13 +18,13 @@ Starting from the SoulissApp code written by Alessandro, Antonino has build a bi
 
 Using this binding there is no longer need of an HTTP/XML interface on the Souliss Gateway, that means no additional resources (mainly RAM) are required.
 
-![](http://souliss.net/images/2014-12/openhab1.png?raw=true)
+![](http://souliss.github.io/images/2014-12/openhab1.png?raw=true)
 
 Of course you can use SoulissApp and openHAB at same time, handling as default five connection (the value can be increased).
 
 Using openHAB gives the freedom to build automation mixing Souliss with commercial products and offers a rule engine. In the screenshot of this post, the average temperature is used to control the heating system.
 
-![](http://souliss.net/images/2014-12/openhab2.png?raw=true)
+![](http://souliss.github.io/images/2014-12/openhab2.png?raw=true)
 
 Actually this binding is not available in the list of openHAB official ones, because it still need some work in terms of coding, but soon will be released.
 

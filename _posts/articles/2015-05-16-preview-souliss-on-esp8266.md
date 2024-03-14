@@ -13,9 +13,9 @@ ads: false
 redirect_from: "2015/05/preview-run-souliss-on-olimex-esp8266.html"
 ---
 
-A couple of weeks ago we got some [Olimex ESP8266-EVB](http://www.souliss.net/2015/04/first-experiment-run-souliss-on-esp8266.html) a small board to quickly prototype on the cheapest WiFi module for DIYers actually on the market, yesterday the porting of Souliss has been completed and now we can run directly on this module without have an Arduino ATmega inbetween.
+A couple of weeks ago we got some [Olimex ESP8266-EVB](http://souliss.github.io/2015/04/first-experiment-run-souliss-on-esp8266.html) a small board to quickly prototype on the cheapest WiFi module for DIYers actually on the market, yesterday the porting of Souliss has been completed and now we can run directly on this module without have an Arduino ATmega inbetween.
 
-The Arduino core for the ESP8266 is constantly updated and for this reason we are distributing an Arduino IDE for Windows that includes the tested cores (*update, the IDE has been removed as the cores are now stable* **follow [this tutorial instead](http://souliss.net/media/how-to-load-a-sketch-on-ESP/)**), just ensure that in your Documents/Arduino/libraries there isn't a Souliss library, this because the IDE that we provide contains also the latest Souliss code.
+The Arduino core for the ESP8266 is constantly updated and for this reason we are distributing an Arduino IDE for Windows that includes the tested cores (*update, the IDE has been removed as the cores are now stable* **follow [this tutorial instead](http://souliss.github.io/media/how-to-load-a-sketch-on-ESP/)**), just ensure that in your Documents/Arduino/libraries there isn't a Souliss library, this because the IDE that we provide contains also the latest Souliss code.
 
 Run this sketch, considering the GPIO available on your module, this use GPIO5 that is used in Olimex ESP8266-EVB with a relay.
 
@@ -71,13 +71,13 @@ If you have the Olimex module, is enough to press the button and then power the 
 
 Using the ESP-01 and other modules from other vendors require an external connection as per following scheme
 
-![](http://souliss.net/images/2015-05/esp8266-push-button-web.png?raw=true)
+![](http://souliss.github.io/images/2015-05/esp8266-push-button-web.png?raw=true)
 
 In the sketch insert your WiFi SSID and Password, once loaded the module connects to your router and you can control it directly from SoulissApp (download the [app here](https://play.google.com/store/apps/details?id=it.angelic.soulissclient)) and the app will automatically discover your node.
 
 The result is [SoulissApp](https://github.com/souliss/souliss/wiki/SoulissApp) showing the node and the relay for control,
 
-![](http://souliss.net/images/2015-05/SoulissApp.png?raw=true)
+![](http://souliss.github.io/images/2015-05/SoulissApp.png?raw=true)
 
 This is just a simple example, because the ESP8266 runs a full Souliss framework and you can communicate with other ESP and AVR based boards (where also wireless-RF and RS485 are supported) to have a full network between your nodes.
 

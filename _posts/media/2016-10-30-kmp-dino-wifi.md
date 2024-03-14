@@ -27,13 +27,13 @@ The board comes boxed into a 3 modules DIN rail enclosure.
 
 The first code upload need an USB to USART converter, next upload can use OTA. The board is not powered from the USART adapter so you need to connect and external power supply every time. The image below show the connection of the power supply wires and the correct position of the USART adapter provided (optionally) with the board.
 
-![](http://souliss.net/images/2016-10/dino_wifi_6.jpg?raw=true)
+![](http://souliss.github.io/images/2016-10/dino_wifi_6.jpg?raw=true)
 
 > The pin mapping is the classic one that can be found on many USB to USART adapter, the GND is on the right side of the header and a 3.3VDC adapter shall be used
 
 Near the header used to connect the USB to USART converter there is a jumper and a pushbutton (visible in the below picture), jumping it will allow to program the board. As alternative, power-off the board and press the *FLASH* button, with the button pressed power-on and then start uploading the code.
 
-![](http://souliss.net/images/2016-10/dino_wifi_2.jpg?raw=true) 
+![](http://souliss.github.io/images/2016-10/dino_wifi_2.jpg?raw=true) 
 
 **Setup the Arduino IDE**
 

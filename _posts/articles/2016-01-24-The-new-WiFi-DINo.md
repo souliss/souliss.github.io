@@ -33,6 +33,6 @@ This is an earlier design started around our experience with ESP8266 and RS485, 
 
 Overall the new board will be smaller than the actual ProDINo and will get more flexibility from the **pluggable terminals** and the expansion connector based on **Grove and UEXT**, price and release date are not yet available, but on these pages will get all the updates.
 
-![](http://souliss.net/images/2016-01/DINoWiFi-fist-assemble.JPG)
+![](http://souliss.github.io/images/2016-01/DINoWiFi-fist-assemble.JPG)
 
 Stay tuned!

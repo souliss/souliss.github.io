@@ -18,8 +18,8 @@ image:
 
 > Automation is a buzzword? We can automate without a server
 
-![Automate Send Intent](http://souliss.net/images/2015-10/ActionPlugin.png)
+![Automate Send Intent](http://souliss.github.io/images/2015-10/ActionPlugin.png)
 
 From next release of SoulissApp, send and receive from SoulissApp through general Intent or Tasker (and Automate) Plugin will be supported, we have a growing [wiki page](https://github.com/souliss/souliss/wiki/SoulissApp-API) dedicated to SoulissApp integrations.
 
-![Automate Send Intent](http://souliss.net/images/2015-10/ConditionPlugin.png)
+![Automate Send Intent](http://souliss.github.io/images/2015-10/ConditionPlugin.png)

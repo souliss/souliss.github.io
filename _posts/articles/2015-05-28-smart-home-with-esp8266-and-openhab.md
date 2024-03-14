@@ -13,7 +13,7 @@ ads: false
 redirect_from: "2015/05/smart-home-with-esp8266-and-openhab.html"
 ---
 
-Last weeks were full of news, as announced in a [previous post](http://www.souliss.net/2015/05/preview-run-souliss-on-olimex-esp8266.html) we have started and basically completed the porting of Souliss on ESP8266 modules, isn't a simple use of the ESP8266 as a transceiver for an Arduino based on an Atmel AVR microcontroller, but is the Souliss framework itself that runs on the ESP8266. 
+Last weeks were full of news, as announced in a [previous post](http://souliss.github.io/2015/05/preview-run-souliss-on-olimex-esp8266.html) we have started and basically completed the porting of Souliss on ESP8266 modules, isn't a simple use of the ESP8266 as a transceiver for an Arduino based on an Atmel AVR microcontroller, but is the Souliss framework itself that runs on the ESP8266. 
 All has started from Saverio, it was Easter when he came out with the news, [he compiled successfully most of Souliss code for an ESP8266](https://groups.google.com/forum/?utm_medium=email&utm_source=footer#!msg/souliss-it/1uDh8lSuVIo/Os0QjjFw0QUJ) and after a couple of days we got some basic functionality available.This has been possible thanks to the amazing work of the guys that has ported the cores in the [Arduino IDE for ESP8266](https://github.com/esp8266/Arduino).
 
 Just the time to release a first try of Souliss for ESP8266 and a bunch of people in our [mailing list](https://github.com/souliss/souliss/wiki/Community) were ready to test and share feedback, as result [Souliss release v.7.0.5](https://github.com/souliss/souliss/releases/tag/v7.0-friariello.5) is now ready to be installed from the [Library Manager](https://github.com/souliss/souliss/wiki/Getting%20Started%20with%20Souliss).

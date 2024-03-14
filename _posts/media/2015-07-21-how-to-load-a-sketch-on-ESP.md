@@ -59,10 +59,10 @@ Once the sketch has been loaded, you can run your module using the following set
 | CH_PD| PullUp |  |
 
 ### Minimal
-![ESP min](http://souliss.net/images/2015-07/ESP_min.png?raw=true)
+![ESP min](http://souliss.github.io/images/2015-07/ESP_min.png?raw=true)
 
 ### Improved Stability
-![ESP improved stability](http://souliss.net/images/2015-07/ESP_improved_stability.png?raw=true)
+![ESP improved stability](http://souliss.github.io/images/2015-07/ESP_improved_stability.png?raw=true)
 
 **Important Note**
 
@@ -86,7 +86,7 @@ The module will start using the code loaded in the external FLASH memory, once t
 
 The [Olimex ESP8266-EVB](https://www.olimex.com/Products/IoT/ESP8266-EVB/open-source-hardware) is an evaluation board for quick prototyping with ESP8266, it doesn't require you any soldering action.
 
-![](http://souliss.net/images/2015-07/ESP8266-EVB.jpg?raw=true)
+![](http://souliss.github.io/images/2015-07/ESP8266-EVB.jpg?raw=true)
 
 In order to start with this module you need
 

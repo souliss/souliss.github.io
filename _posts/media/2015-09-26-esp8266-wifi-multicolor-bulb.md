@@ -14,13 +14,13 @@ image:
   creditlink: http://authometion.com/
 ---
 
-Working with the ESP8266 is always a great experience, it becomes just a matter of getting the proper I/O and then in few minutes your module is running. The introduction of the ESP8266 in the [supported SoC for Souliss](http://souliss.net/articles/preview-souliss-on-esp8266/) has open the world of **smart devices** to the DIYers and the very competitive price of this IC will [spread it into consumer products](http://souliss.net/articles/esp8266-in-commercial-product/).
+Working with the ESP8266 is always a great experience, it becomes just a matter of getting the proper I/O and then in few minutes your module is running. The introduction of the ESP8266 in the [supported SoC for Souliss](http://souliss.github.io/articles/preview-souliss-on-esp8266/) has open the world of **smart devices** to the DIYers and the very competitive price of this IC will [spread it into consumer products](http://souliss.github.io/articles/esp8266-in-commercial-product/).
 
-In the last few days we have started working with [Authometion](http://authometion.com/) to support the new LYT8266, a variant of their RGBW LED Bulb that has an ESP8266 inside, so that you should program your sketches directly into the lamp (this is [in contrast with the approach used with LYT88](http://souliss.net/media/diy-your-philips-hue-led-bulb/)).
+In the last few days we have started working with [Authometion](http://authometion.com/) to support the new LYT8266, a variant of their RGBW LED Bulb that has an ESP8266 inside, so that you should program your sketches directly into the lamp (this is [in contrast with the approach used with LYT88](http://souliss.github.io/media/diy-your-philips-hue-led-bulb/)).
 
 > Thanks to the [Arduino cores](https://github.com/esp8266/Arduino) for ESP8266 you can program this bulb directly from the Arduino IDE using **OTA** (Over the Air) programming, running Souliss you have direct access via SoulissApp or [openHAB](https://github.com/souliss/souliss/wiki/openHAB%20Binding).
 
-![](http://souliss.net/images/2015-09/RGBWBulb_comparison.jpg?raw=true)
+![](http://souliss.github.io/images/2015-09/RGBWBulb_comparison.jpg?raw=true)
 
 A side-to-side comparison show a LYT88 bulb (on the left side) with a LYT8266 (right one), the voltage regulation is based on a switching circuit (on top right, you can see the inductor and regulator) this is due to the high current required by the ESP8266 compared to a standard microcontroller with external RF radio (as on the left side).
 The I/O is basically the same, with one mosfet for each channel used to sink the current from the LEDs powered at near 12 Vdc.
@@ -39,11 +39,11 @@ You need the following pre-requisites to load a sketch:
 
 Once you will power your bulb, if is the first time and has never been configured before, you will see an *Access Point* called **Souliss**, just connect and point your browser to **http://192.168.4.1**
 
-![](http://souliss.net/images/2015-09/WebConfig.png?raw=true)
+![](http://souliss.github.io/images/2015-09/WebConfig.png?raw=true)
 
 You get a web interface from where you can configure the WiFi and IP parameters, and select the node as **Gateway** or **Peer**. Configure one bulb as **Gateway** and the others as **Peer**, they will build automatically a Souliss network and will be available in SoulissApp. Note: if the DHCP box is ticked it will over-ride a manually entered address if present - and likewise for the Gateway address - so don't tick those boxes if you wish to manually specify the addresses.  
 
-![](http://souliss.net/images/2015-09/SoulissApp.jpg?raw=true)
+![](http://souliss.github.io/images/2015-09/SoulissApp.jpg?raw=true)
 
 Your bulbs have full features, but if you want to upload a new sketch you just need to go in the Arduino IDE and set the following parameters:
 
@@ -63,7 +63,7 @@ It is very important that you always upload an OTA enabled sketch each time, oth
 
 Using the cable to connect via USART can be useful if you don't want OTA or if you have bricked your OTA sketch, also you can use the whole flash size (1 MByte) whereas on OTA you are only able to use 512 KBytes. All the previous pre-requisite applies also for this case.
 
-![](http://souliss.net/images/2015-09/ProgrammingConnector.png?raw=true)
+![](http://souliss.github.io/images/2015-09/ProgrammingConnector.png?raw=true)
 
 
 | PIN | Resistor | Serial Adapter  |
@@ -74,7 +74,7 @@ Using the cable to connect via USART can be useful if you don't want OTA or if y
 | GPIO0         |          | DTR*          |
 | GND           |          | GND           |
 
-The two connection with * are not mandatory, without you need to turn OFF the bulb and place GPIO0 to GND every time that you want to program it, this is similar to any other ESP8266 based device, this [tutorial](http://souliss.net/media/how-to-load-a-sketch-on-ESP/) gives the basic to use the Arduino IDE and the ESP8266 cores. 
+The two connection with * are not mandatory, without you need to turn OFF the bulb and place GPIO0 to GND every time that you want to program it, this is similar to any other ESP8266 based device, this [tutorial](http://souliss.github.io/media/how-to-load-a-sketch-on-ESP/) gives the basic to use the Arduino IDE and the ESP8266 cores. 
 
 On board of the LYT8266 the programming connector, is very small and need an adaptor supplied with the dev kit, and expose the TX, RX together with GND and GPIO0 and others. You haven't the Vcc, so you should power the ESP8266 board connecting it to main 220 Vac (or 110 Vac), so be careful.
 

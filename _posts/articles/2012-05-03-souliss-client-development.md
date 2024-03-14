@@ -12,7 +12,7 @@ redirect_from: "2012/05/souliss-client-development-going-on.html"
 
 Souliss client is currently at version 0.7.9 This version isn't public yet, because thorough testing is still needed, but I can anticipate some of the main new features:
 
-![](http://souliss.net/images/2012-05/SoulissClient.png?raw=true)
+![](http://souliss.github.io/images/2012-05/SoulissClient.png?raw=true)
 
 * More stable status updates
 * New supported typicals (gates and motorized appliances) 

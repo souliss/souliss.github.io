@@ -64,7 +64,7 @@ Launch `eclipseArduinoIDE.exe`
 * select *Arduino* on the left tree
 * Enter correct paths
 
-  ![configure1](http://souliss.net/images/2016-03/774e8604-e5d3-11e5-9396-c41c90aa51a1.png)
+  ![configure1](http://souliss.github.io/images/2016-03/774e8604-e5d3-11e5-9396-c41c90aa51a1.png)
 
   You should see green text: `ide is supported`
 
@@ -79,18 +79,18 @@ Launch `eclipseArduinoIDE.exe`
 * select *General*, *Workspace* on left tree
 * Mark *Save automatically before build* checkbox
 * *Apply*
-![configure2](http://souliss.net/images/2016-03/795c4d5a-e5d3-11e5-95a9-93861bf4a1f6.png)
+![configure2](http://souliss.github.io/images/2016-03/795c4d5a-e5d3-11e5-95a9-93861bf4a1f6.png)
 
 ### Add `.ino` and `.pde` as C++ Source
 * Enter Preferences: Menu *Window*, *Preferences*
 * Select *C/C++*, *File types* on left tree
-  ![configure3a](http://souliss.net/images/2016-03/68d5dbb8-e5d8-11e5-8643-ffc032ceed61.png)
+  ![configure3a](http://souliss.github.io/images/2016-03/68d5dbb8-e5d8-11e5-8643-ffc032ceed61.png)
 
 * Press *New..*, enter `.ino` and select *C++ Source File*, *OK*
-  ![configure3b](http://souliss.net/images/2016-03/7f5b724e-e5d3-11e5-87b2-7a933b17dadb.png)
+  ![configure3b](http://souliss.github.io/images/2016-03/7f5b724e-e5d3-11e5-87b2-7a933b17dadb.png)
 
 * Again press *New..*, enter `.pde` and select *C++ Source File*, *OK*
-  ![configure3c](http://souliss.net/images/2016-03/813f7006-e5d3-11e5-9376-7dde45133642.png)
+  ![configure3c](http://souliss.github.io/images/2016-03/813f7006-e5d3-11e5-9376-7dde45133642.png)
 
 * *Apply*
 
@@ -102,7 +102,7 @@ Launch `eclipseArduinoIDE.exe`
 * Connect your Arduino board to computer
 * Menu *File*, *New*, *New Arduino sketch* or press *New sketch* on toolbar
 
-  ![newsketchbutton](http://souliss.net/images/2016-03/261b70a6-e5da-11e5-95f3-28b06d33079b.png)
+  ![newsketchbutton](http://souliss.github.io/images/2016-03/261b70a6-e5da-11e5-95f3-28b06d33079b.png)
 
 * Enter *Project name*, for example `hello`, *Next*
 * Select your board and COM port, for example `Arduino/Genuino Uno`, `COM11`, *Next*
@@ -112,7 +112,7 @@ Launch `eclipseArduinoIDE.exe`
 ## Compile (Verify) your sketch
 * Press *Verify* button on toolbar
 
-  ![verifybutton](http://souliss.net/images/2016-03/2618f010-e5da-11e5-9361-1e45d6398dcf.png)
+  ![verifybutton](http://souliss.github.io/images/2016-03/2618f010-e5da-11e5-9361-1e45d6398dcf.png)
 
 On *Console* tab you should see many messages and at the end:
 ```
@@ -120,14 +120,14 @@ On *Console* tab you should see many messages and at the end:
 Build Finished
 ```
 
-![blinkcompiled](http://souliss.net/images/2016-03/86aae28c-e5d3-11e5-8e7f-4cfd4d276e7a.png)
+![blinkcompiled](http://souliss.github.io/images/2016-03/86aae28c-e5d3-11e5-8e7f-4cfd4d276e7a.png)
 
 On *Problems* tab should be no red *Errors*
 
 ## Upload your sketch
 * Press *Upload* button on toolbar
 
-![uploadbutton](http://souliss.net/images/2016-03/261d85a8-e5da-11e5-83ec-474452f33a00.png)
+![uploadbutton](http://souliss.github.io/images/2016-03/261d85a8-e5da-11e5-83ec-474452f33a00.png)
 
 On *Console* Tab you can see messages like this:
 
@@ -188,7 +188,7 @@ You can change COM port (or even board type)
 * Select *Arduino* on the left tree
 * Correct your COM *port* and/or *board* type
 
-![changeboard](http://souliss.net/images/2016-03/261630be-e5da-11e5-9945-cf63662a1a5d.png)
+![changeboard](http://souliss.github.io/images/2016-03/261630be-e5da-11e5-9945-cf63662a1a5d.png)
 
 
 ## Create and compile Souliss sketch
@@ -207,7 +207,7 @@ Rename `souliss-friariello` directory to just `souliss`.
 * Connect your Arduino board to computer
 * Press *New sketch* on toolbar
 
-![newsketchbutton](http://souliss.net/images/2016-03/261b70a6-e5da-11e5-95f3-28b06d33079b.png)
+![newsketchbutton](http://souliss.github.io/images/2016-03/261b70a6-e5da-11e5-95f3-28b06d33079b.png)
 
 * Enter Project name, for example `souliss-test`, *Next*
 * Select your *board* and COM *port*, for example `Arduino/Genuino Uno`, `COM11`, *Next*
@@ -226,13 +226,13 @@ So you need to exclude them from compilation!**
 
 In *Project Explorer*, expand your project, `Libraries`, `souliss`, select all directories from `base` to `webhook` 
 
-![excludesoulissdirs1](http://souliss.net/images/2016-03/44f2e95e-e5e0-11e5-86c5-ecd7bb5fc4cd.png)
+![excludesoulissdirs1](http://souliss.github.io/images/2016-03/44f2e95e-e5e0-11e5-86c5-ecd7bb5fc4cd.png)
 
 Then select from context menu *Resource Configuration*,  *Exlude from builds*, *Select all*, *OK*
 
 Directories `base`, `bconf`, ... `webhook` should be grayed out:
 
-![excludesoulissdirs2](http://souliss.net/images/2016-03/451d9550-e5e0-11e5-83e5-d2ce478b8ccb.png)
+![excludesoulissdirs2](http://souliss.github.io/images/2016-03/451d9550-e5e0-11e5-83e5-d2ce478b8ccb.png)
 
 ## Compile (Verify) your sketch
 * Press *Verify* button on toolbar

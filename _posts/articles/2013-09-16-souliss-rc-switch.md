@@ -15,7 +15,7 @@ redirect_from: "2013/09/controlling-cheap-rc-power-socket.html"
 
 It was just three days ago when Christian [makes a knock](https://groups.google.com/forum/?fromgroups#!topic/souliss/F_VheIs5Te8) in the forum, he triggered a set of common RF Power Socket at 433 MHz using [RCSwitch](https://github.com/sui77/rc-switch) and was then working for an integration with Souliss, adding Android control was the goal.
 
-![](http://souliss.net/images/2013-09/rcswitch.jpg?raw=true)
+![](http://souliss.github.io/images/2013-09/rcswitch.jpg?raw=true)
 
 After few steps the sketch was complete and this is the result:
 

@@ -17,7 +17,7 @@ Let give a brief preview of SpeakEasy a new tool that will be soon available in 
 
 Below there is the complete code to load into an [Arduino Ethernet](https://github.com/souliss/souliss/wiki/Supported%20Hardware%20Platform) (or compatible) to have a full control of an LED via Android application SoulissApp and of course through a standard pushbutton.
 
-This feature is available through C macro, so both the standard and the new SpeakEasy code will work at same time (even mixed). The idea is to complete a set of example via SpeakEasy for the next release and use it for the Seeed Studio Grove integration, in order to make even easier build your [home automation](http://www.souliss.net/2013/08/arduino-and-android-lets-start-home.html) over interconnected Arduino (and compatible) nodes.
+This feature is available through C macro, so both the standard and the new SpeakEasy code will work at same time (even mixed). The idea is to complete a set of example via SpeakEasy for the next release and use it for the Seeed Studio Grove integration, in order to make even easier build your [home automation](http://souliss.github.io/2013/08/arduino-and-android-lets-start-home.html) over interconnected Arduino (and compatible) nodes.
 
 Stay tuned,
 Dario.

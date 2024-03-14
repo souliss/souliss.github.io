@@ -14,27 +14,27 @@ image:
   creditlink: https://play.google.com/store/apps/details?id=com.llamalab.automate&hl=en
 ---
 
-After quite a lot of words on the integration of [SoulissApp with Automate and Tasker](http://souliss.net/articles/soulissapp-integrations/) through [intents and plugins](http://souliss.net/articles/happy-laziness-automate-tasker/), is now time to have a detailed look on how to get it working.
+After quite a lot of words on the integration of [SoulissApp with Automate and Tasker](http://souliss.github.io/articles/soulissapp-integrations/) through [intents and plugins](http://souliss.github.io/articles/happy-laziness-automate-tasker/), is now time to have a detailed look on how to get it working.
 
 We focus on Tasker Plugin that is a set of open API supported from multiple Android software like Tasker (of course) or Automate that will be covered in this tutorial. The Plugin allow an interaction with Souliss via common language like *turn on the living room light* or *is the living room light on?*.
 
 > Using Automate you can have preemptive notification, that asks you if you want to perform common task based on time, position or other condition (open app, accelerometer sensor of the smartphone)
 
-![](http://souliss.net/images/2015-11/dialog-suggestion.jpg?raw=true)
+![](http://souliss.github.io/images/2015-11/dialog-suggestion.jpg?raw=true)
 
 **Execute an Action or take Decision**
 
-![](http://souliss.net/images/2015-11/AutomatePlugin.png?raw=true)
+![](http://souliss.github.io/images/2015-11/AutomatePlugin.png?raw=true)
 
 In the flow editor, included in the APPS menu there are the two Plugin that can be used with SoulissApp, the Action and Decision. The former is used to execute an action, the latter to take a decision based on the state of a device in SoulissApp.
 
 So you can turn on the *Main Light* using the **Action** one or,
 
-![](http://souliss.net/images/2015-11/ActionPlugin.jpg?raw=true)
+![](http://souliss.github.io/images/2015-11/ActionPlugin.jpg?raw=true)
 
 Check if the *Main Light* is on using the **Decision** one
 
-![](http://souliss.net/images/2015-10/ConditionPlugin.png?raw=true)
+![](http://souliss.github.io/images/2015-10/ConditionPlugin.png?raw=true)
 
 These two Plugin can be used in any Automate flow, even if this is not a full Automate tutorial, lets see how we can build simple conditional actions.
 
@@ -42,7 +42,7 @@ These two Plugin can be used in any Automate flow, even if this is not a full Au
 
 Flows are easy to use but needs recursive check to be effective, the flow in the below picture checks for a time frame and later show a notification if the ambient light cross a threshold value.
 
-![](http://souliss.net/images/2015-11/Automate-not-recursive.jpg?raw=true)
+![](http://souliss.github.io/images/2015-11/Automate-not-recursive.jpg?raw=true)
 
 Once started the flow will wait for a time frame, after 9 PM it enters in the next step and check for the ambient light using the embed sensor of the smartphone. If in the time frame the ambient light is too high,it will show a notification and will ask the user if he want to lower the brightness.
 
@@ -50,7 +50,7 @@ That's works nice if after 9 PM you cross the threshold, if not the flow will ch
 
 > You need a recursive check of a condition using parallel flow, those are called Fork. In Automate Flows can interact with their Forks but not with other Flows.
 
-![](http://souliss.net/images/2015-11/Automate-recursive.png?raw=true)
+![](http://souliss.github.io/images/2015-11/Automate-recursive.png?raw=true)
 
 Having a recursive check needs a dedicated fork, like in the above picture. It first checks if connected to *Plinio* WiFi network (set it as *Immediately*) is not it holds on the same check with *On Change* parameter. This will not drain your battery while waiting for a change in the connection state.
 

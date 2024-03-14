@@ -20,9 +20,9 @@ Far from the New Zeland the WiFi Pixel has arrived in my mailbox, this is a comb
 
 The below image by [Adafruit](https://learn.adafruit.com/assets/10668) shows the internal view of the addressable LED
 
-![](http://souliss.net/images/2016-01/leds_neo-closeup.jpg?raw=true)
+![](http://souliss.github.io/images/2016-01/leds_neo-closeup.jpg?raw=true)
 
-Assuming that you know how to use the [Arduino IDE and the ESP8266](http://souliss.net/media/how-to-load-a-sketch-on-ESP/), you just have to download the [Adafruit NeoPixel library](https://github.com/plinioseniore/Adafruit_NeoPixel) and have the latest Souliss release (v7.1.1 at time of writing) to run the following sketch
+Assuming that you know how to use the [Arduino IDE and the ESP8266](http://souliss.github.io/media/how-to-load-a-sketch-on-ESP/), you just have to download the [Adafruit NeoPixel library](https://github.com/plinioseniore/Adafruit_NeoPixel) and have the latest Souliss release (v7.1.1 at time of writing) to run the following sketch
 
 {% highlight c %}
 /**************************************************************************

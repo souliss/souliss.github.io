@@ -23,7 +23,7 @@ This video gives some ideas of the potentiality of Souliss for the following rea
 
 What you cannot see in this video is how simple is the setup and development, scalability means ability to customize to your own needs, that's a key of Souliss that hardly can be found in other home automation or internet of things projects that are based on DIY solutions.
 
-Out of this [website](http://www.souliss.net/), there are other two important sources for downloading the [SoulissApp Android application](https://play.google.com/store/apps/details?id=it.angelic.soulissclient&feature=search_result#?t=W251bGwsMSwxLDEsIml0LmFuZ2VsaWMuc291bGlzc2NsaWVudCJd) and the [Arduino library and sketches](https://github.com/souliss/souliss/wiki/Getting%20Started%20with%20Souliss). The [wiki](https://github.com/souliss/souliss/wiki/) will drive you in the first setup and the forum will support for doubts, problems and questions.
+Out of this [website](http://souliss.github.io/), there are other two important sources for downloading the [SoulissApp Android application](https://play.google.com/store/apps/details?id=it.angelic.soulissclient&feature=search_result#?t=W251bGwsMSwxLDEsIml0LmFuZ2VsaWMuc291bGlzc2NsaWVudCJd) and the [Arduino library and sketches](https://github.com/souliss/souliss/wiki/Getting%20Started%20with%20Souliss). The [wiki](https://github.com/souliss/souliss/wiki/) will drive you in the first setup and the forum will support for doubts, problems and questions.
 
 If you are reading this post probably is the first time that you hear about Souliss, if so, share it with your friends. 
 

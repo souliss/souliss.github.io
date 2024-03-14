@@ -15,8 +15,8 @@ image:
 
 Updating soulissApp is both a pleasure and a pain. Proud of mantaining a 7 years old app, born under Android 2 _Gingerbread_ environment, it still takes some old legacy dependancy with it and several spiderwebs. Hard to update and/or mantain, especially because of the earthquaking environment. But it still works, I "just" had to redo backgroud services and remove much legacy code. This new version is compiled **targeting sdk 29**, aka Q, Android 10, but the biggest changes came adapting to previous Android's major release.
 
-![New permissions request modal](http://souliss.net/images/2019-10/Screenshot_permission.png)
-![new settings screen](http://souliss.net/images/2019-10/Screenshot_settings.png)
+![New permissions request modal](http://souliss.github.io/images/2019-10/Screenshot_permission.png)
+![new settings screen](http://souliss.github.io/images/2019-10/Screenshot_settings.png)
 
 Demo mode has been temporanely removed, as the public IP isn't available any longer. Write us if you can host one and are willing to.
 

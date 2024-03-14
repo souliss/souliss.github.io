@@ -3,7 +3,7 @@
 team:
   name: Souliss Team
   web: https://github.com/souliss
-  email: info@souliss.net
+  email: -
   bio: "Open-source SmartHome at your fingertip! "
   avatar: logo160.png
   twitter: soulissteam
@@ -13,17 +13,17 @@ team:
 plinio_seniore:
   name: Dario
   web: https://github.com/plinioseniore
-  email: dario.dimaio@souliss.net
+  email: -
   bio: "Oil&Gas automation, electronics addicted, in love for IC engines and whatever makes noise. "
   avatar: plinio160.jpg
   twitter: veseotech
   google:
-    plus: +DarioDiMaioakaPlinio
+    plus: 
 
 shine_angelic:
   name: Alessandro
   web: https://github.com/shineangelic
-  email: alessandro.delpex@souliss.net
+  email: -
   bio: "Java and Oracle, goth, digital photo, synths, drums, fish tanks, RC models."
   avatar: shine160.jpg
   twitter: ShineAngelic
@@ -33,7 +33,7 @@ shine_angelic:
 tonino_fazio:
   name: Tonino
   web: https://github.com/fazioa
-  email: antonino.fazio@souliss.net
+  email: -
   bio: "Enthusiast of electronics, programming, graphics and photo, trumpet and chocolate. Fanatic of the DIY."
   avatar: tonino160.jpg
   twitter:
@@ -58,7 +58,7 @@ juanpintom:
   avatar: juanpintom160.jpg
   twitter:
   google:
-    plus: +juanpintom
+    plus:
 
 ribico:
   name: Gabriele Ribichini
@@ -68,7 +68,7 @@ ribico:
   avatar: ribico160.png
   twitter: gribico
   google:
-    plus: +gabriele.ribichini
+    plus: 
     
 marcolino7:
   name: Marco Pozzuolo
